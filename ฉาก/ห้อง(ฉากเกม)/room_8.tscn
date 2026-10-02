@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://ciocq6jnov408"]
+
+[ext_resource type="Script" uid="uid://chywmekcu1ydv" path="res://ฉาก/ห้อง(ฉากเกม)/room_8.gd" id="1_4bbf7"]
+[ext_resource type="Texture2D" uid="uid://bvqkbqx3eow00" path="res://ฉาก/ห้อง(ฉากเกม)/เก็บภาพ/20260806_210427.png" id="1_64e85"]
+[ext_resource type="PackedScene" uid="uid://bgb2j6r5ed7yq" path="res://ตัวระคร/หน้าต่างข้อความตัวละคร/text_box.tscn" id="2_ri10m"]
+[ext_resource type="PackedScene" uid="uid://druktgarfyqs8" path="res://ทดสอบ/เปลี่ยนฉาก/area_2d.tscn" id="3_gjlp5"]
+[ext_resource type="PackedScene" uid="uid://qsq8magv6w2c" path="res://ตัวระคร/ตัวระคร.tscn" id="4_w0mus"]
+[ext_resource type="PackedScene" uid="uid://dyyknngasmhhu" path="res://ทดสอบ/เปลี่ยนฉาก/ลง.tscn" id="4_x5q50"]
+[ext_resource type="Texture2D" uid="uid://ce0rwvj2j2qr8" path="res://ภาพ/wp2932957.jpg" id="6_w0mus"]
+[ext_resource type="AudioStream" uid="uid://begol1g3betw5" path="res://ภาพ/เสียง/จั้ม/freesound_community-jumpscare_sound-39630.mp3" id="7_uwq77"]
+
+[node name="room8" type="Node2D" unique_id=1855982189]
+script = ExtResource("1_4bbf7")
+
+[node name="ฉาก" type="TextureRect" parent="." unique_id=2039608332]
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("1_64e85")
+expand_mode = 1
+stretch_mode = 6
+metadata/_edit_use_anchors_ = true
+
+[node name="TextBox" parent="." unique_id=1732555962 node_paths=PackedStringArray("character_node") instance=ExtResource("2_ri10m")]
+character_node = NodePath("../ตัวระคร")
+
+[node name="ตัวระคร" parent="." unique_id=828537330 instance=ExtResource("4_w0mus")]
+position = Vector2(-25, 52)
+
+[node name="Area2D" parent="." unique_id=1263770101 instance=ExtResource("3_gjlp5")]
+position = Vector2(1, 1)
+
+[node name="ลง" parent="." unique_id=1434753056 instance=ExtResource("4_x5q50")]
+position = Vector2(1, 1)
+target_scene = "uid://dyhuih0p1wtji"
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=217032956]
+
+[node name="GhostSprite" type="Sprite2D" parent="CanvasLayer" unique_id=1605737169]
+visible = false
+position = Vector2(578.5, 325.5)
+scale = Vector2(1.2919464, 0.7281879)
+texture = ExtResource("6_w0mus")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="CanvasLayer" unique_id=536677487]
+stream = ExtResource("7_uwq77")

@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://shbiapqnpevq"]
+
+[ext_resource type="Script" uid="uid://diws41xnqw267" path="res://ทดสอบ/เปลี่ยนฉาก/กด.gd" id="1_ehs2g"]
+[ext_resource type="Texture2D" uid="uid://b72v7i3xuqwk4" path="res://ทดสอบ/เปลี่ยนฉาก/เมาส์/icons8-scroll-up-48.png" id="2_vc5bp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f3bvx"]
+
+[node name="กด" type="Area2D" unique_id=882885038]
+script = ExtResource("1_ehs2g")
+custom_cursor_texture = ExtResource("2_vc5bp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1646735482]
+scale = Vector2(10, 10)
+shape = SubResource("RectangleShape2D_f3bvx")

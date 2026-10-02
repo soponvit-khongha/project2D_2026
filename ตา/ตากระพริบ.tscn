@@ -1,0 +1,133 @@
+[gd_scene format=3 uid="uid://c01qlkaqy4ggv"]
+
+[ext_resource type="Texture2D" uid="uid://bv3505f5dhw7m" path="res://ตา/ไม่มีชื่อ 3_20260811235828.png" id="1_w625c"]
+
+[sub_resource type="Animation" id="Animation_enhli"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Polygon2D2:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-71, -95)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Polygon2D2:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Polygon2D:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Polygon2D:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_lrgam"]
+resource_name = "ขยับตา"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Polygon2D2:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.6333333, 1.2, 1.8666667, 2.5666666),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-71, -95), Vector2(-107, -93), Vector2(-70, -115), Vector2(-45, -89), Vector2(-65, -100)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Polygon2D2:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Polygon2D:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Polygon2D:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_66cx4"]
+_data = {
+&"RESET": SubResource("Animation_enhli"),
+&"ขยับตา": SubResource("Animation_lrgam")
+}
+
+[node name="ตากระพริบ" type="Node2D" unique_id=58824761]
+position = Vector2(479, 212)
+
+[node name="Polygon2D" type="Polygon2D" parent="." unique_id=170789098]
+scale = Vector2(1.0013486, 1)
+color = Color(1, 0.6484375, 0.6484375, 1)
+texture = ExtResource("1_w625c")
+polygon = PackedVector2Array(80, 16, 63.999985, 23.999996, 48, 31.999996, 39.999985, 39.999996, 24, 48.000004, 15.999985, 63.999996, 8, 79.999985, 8, 87.999985, 15.999985, 103.999985, 32, 119.999985, 39.999985, 128, 55.999985, 128, 71.999985, 135.99998, 88, 135.99998, 96, 135.99998, 119.999985, 135.99998, 135.99998, 128, 151.99998, 119.999985, 159.99998, 119.999985, 167.99998, 111.999985, 175.99998, 111.999985, 191.99998, 111.999985, 199.99998, 103.999985, 199.99998, 87.999985, 191.99998, 79.999985, 183.99998, 72, 175.99998, 72, 167.99998, 55.999996, 151.99998, 39.999996, 135.99998, 23.999996, 119.999985, 16, 96, 16)
+uv = PackedVector2Array(80, 16, 63.999985, 23.999996, 48, 31.999996, 39.999985, 39.999996, 24, 48.000004, 15.999985, 63.999996, 8, 79.999985, 8, 87.999985, 15.999985, 103.999985, 32, 119.999985, 39.999985, 128, 55.999985, 128, 71.999985, 135.99998, 88, 135.99998, 96, 135.99998, 119.999985, 135.99998, 135.99998, 128, 151.99998, 119.999985, 159.99998, 119.999985, 167.99998, 111.999985, 175.99998, 111.999985, 191.99998, 111.999985, 199.99998, 103.999985, 199.99998, 87.999985, 191.99998, 79.999985, 183.99998, 72, 175.99998, 72, 167.99998, 55.999996, 151.99998, 39.999996, 135.99998, 23.999996, 119.999985, 16, 96, 16)
+
+[node name="Polygon2D2" type="Polygon2D" parent="." unique_id=537477909]
+position = Vector2(-71, -95)
+color = Color(1, 0.765625, 0.765625, 1)
+texture = ExtResource("1_w625c")
+polygon = PackedVector2Array(152, 136, 133, 146, 125, 161, 120, 184, 128, 208, 144, 215.99998, 168, 215.99998, 182, 215, 200, 200, 205, 184, 202, 162, 194, 149, 175, 134, 162, 136)
+uv = PackedVector2Array(160, 128, 135.99998, 136, 120, 152, 120, 184, 128, 208, 144, 215.99998, 168, 215.99998, 183.99998, 215.99998, 200, 200, 208, 184, 208, 160, 200, 144, 183.99998, 128, 168, 128)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=174559191]
+libraries/ = SubResource("AnimationLibrary_66cx4")
+autoplay = &"ขยับตา"

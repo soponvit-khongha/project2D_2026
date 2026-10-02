@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://durvbc4lp2ifp"]
+
+[ext_resource type="Script" uid="uid://dtatneys85bsw" path="res://ฉาก/ห้อง(ฉากเกม)/room_13.gd" id="1_ajgqu"]
+[ext_resource type="Texture2D" uid="uid://qt1w260hrn6q" path="res://ฉาก/ห้อง(ฉากเกม)/เก็บภาพ/20260806_210601.png" id="1_fgxou"]
+[ext_resource type="PackedScene" uid="uid://bgb2j6r5ed7yq" path="res://ตัวระคร/หน้าต่างข้อความตัวละคร/text_box.tscn" id="2_ex038"]
+[ext_resource type="PackedScene" uid="uid://druktgarfyqs8" path="res://ทดสอบ/เปลี่ยนฉาก/area_2d.tscn" id="3_ex038"]
+[ext_resource type="PackedScene" uid="uid://qsq8magv6w2c" path="res://ตัวระคร/ตัวระคร.tscn" id="4_5fv1g"]
+[ext_resource type="PackedScene" uid="uid://dyyknngasmhhu" path="res://ทดสอบ/เปลี่ยนฉาก/ลง.tscn" id="4_6dx7t"]
+[ext_resource type="PackedScene" uid="uid://bt316cf2o7ifq" path="res://ของ/เสร็จแล้ว/เอ็มออนิว.tscn" id="6_ck3cl"]
+
+[node name="Room13" type="Node2D" unique_id=182219489]
+script = ExtResource("1_ajgqu")
+
+[node name="ฉาก" type="TextureRect" parent="." unique_id=1603857494]
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("1_fgxou")
+expand_mode = 1
+stretch_mode = 6
+metadata/_edit_use_anchors_ = true
+
+[node name="TextBox" parent="." unique_id=1732555962 node_paths=PackedStringArray("character_node") instance=ExtResource("2_ex038")]
+character_node = NodePath("../ตัวระคร")
+
+[node name="ตัวระคร" parent="." unique_id=828537330 instance=ExtResource("4_5fv1g")]
+position = Vector2(-25, 52)
+
+[node name="Area2D" parent="." unique_id=1155147205 instance=ExtResource("3_ex038")]
+position = Vector2(1, 1)
+
+[node name="ลง" parent="." unique_id=1434753056 instance=ExtResource("4_6dx7t")]
+position = Vector2(2, 2)
+target_scene = "uid://bgq3i5s4kpelu"
+
+[node name="เอ็มออนิว" parent="." unique_id=293035725 instance=ExtResource("6_ck3cl")]
+position = Vector2(670, 226)
+scale = Vector2(0.58623785, 0.5993606)

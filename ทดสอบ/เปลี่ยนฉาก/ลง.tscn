@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://dyyknngasmhhu"]
+
+[ext_resource type="Script" uid="uid://cv2r34aqoagay" path="res://ทดสอบ/เปลี่ยนฉาก/collision_shape_2d.gd" id="1_6de1g"]
+[ext_resource type="Script" uid="uid://cyeq1s87trbjm" path="res://ทดสอบ/เปลี่ยนฉาก/ลง.gd" id="1_alxkx"]
+[ext_resource type="Texture2D" uid="uid://twpq65in7okm" path="res://ทดสอบ/เปลี่ยนฉาก/เมาส์/icons8-scroll-down-48.png" id="2_tsppu"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q3huu"]
+size = Vector2(864, 101)
+
+[node name="ลง" type="Area2D" unique_id=1434753056]
+script = ExtResource("1_alxkx")
+custom_cursor_texture = ExtResource("2_tsppu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=271190546]
+position = Vector2(576, 597)
+shape = SubResource("RectangleShape2D_q3huu")
+script = ExtResource("1_6de1g")

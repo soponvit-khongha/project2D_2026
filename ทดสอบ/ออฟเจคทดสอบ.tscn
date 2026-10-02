@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://c2o3pcqtjkln3"]
+
+[ext_resource type="Texture2D" uid="uid://bei1i2a31fgyl" path="res://icon.svg" id="1_hr6j4"]
+[ext_resource type="Script" uid="uid://b6gf10dj2vntp" path="res://ทดสอบ/ออฟเจคทดสอบ.gd" id="1_tuke5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f3bvx"]
+size = Vector2(130, 130)
+
+[node name="ออฟเจคทดสอบ" type="Area2D" unique_id=1380095024]
+script = ExtResource("1_tuke5")
+
+[node name="Icon" type="Sprite2D" parent="." unique_id=107368509]
+texture = ExtResource("1_hr6j4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1253309207]
+shape = SubResource("RectangleShape2D_f3bvx")

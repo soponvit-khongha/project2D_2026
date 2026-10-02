@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://bsdsd8faolumi"]
+
+[ext_resource type="Texture2D" uid="uid://di5fahishixgr" path="res://ของ/ภาพของ/NotePad_Story-removebg-preview.png" id="1_0wfr6"]
+[ext_resource type="Script" uid="uid://dpwes7shyetuw" path="res://ของ/เสร็จแล้ว/กระดาษเช็ดตูด.gd" id="1_4ewp4"]
+[ext_resource type="Texture2D" uid="uid://8lhsix6isb0g" path="res://ภาพ/png-clipart-acid-free-paper-business-printing-old-paper-miscellaneous-baked-goods-removebg-preview.png" id="2_4ewp4"]
+[ext_resource type="Texture2D" uid="uid://c6fxjui1rsv33" path="res://ทดสอบ/เปลี่ยนฉาก/เมาส์/icons8-circle-32.png" id="2_n3pes"]
+[ext_resource type="FontFile" uid="uid://dtfedtjbg5q8m" path="res://ภาพ/อักศร/ms-sans-serif-1.otf" id="3_n3pes"]
+[ext_resource type="AudioStream" uid="uid://c23wwj36dyf56" path="res://ภาพ/เสียง/จั้ม/floraphonic-newspaper-foley-4-196721.mp3" id="6_kiebm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f3bvx"]
+size = Vector2(175, 171)
+
+[node name="กระดาษเช็ดตูด" type="Area2D" unique_id=680658460]
+script = ExtResource("1_4ewp4")
+custom_cursor_texture = ExtResource("2_n3pes")
+
+[node name="NotePadStoryRemovebgPreview" type="Sprite2D" parent="." unique_id=1096372430]
+texture = ExtResource("1_0wfr6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1264291728]
+position = Vector2(-1.5, -5.5)
+shape = SubResource("RectangleShape2D_f3bvx")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=143941472]
+scale = Vector2(20, 20)
+transform = Transform2D(20, 0, 0, 20, 0, 0)
+
+[node name="P" type="Sprite2D" parent="CanvasLayer" unique_id=923399225]
+visible = false
+modulate = Color(0.59375, 0.59375, 0.59375, 1)
+position = Vector2(28.449999, 15.699998)
+scale = Vector2(0.07711769, 0.06665056)
+texture = ExtResource("2_4ewp4")
+
+[node name="Label" type="Label" parent="CanvasLayer/P" unique_id=1411189736]
+modulate = Color(0.7265625, 0, 0, 1)
+offset_left = -228.87094
+offset_top = -99.77406
+offset_right = 246.37674
+offset_bottom = 159.22594
+theme_override_fonts/font = ExtResource("3_n3pes")
+theme_override_font_sizes/font_size = 12
+text = "
+Grandma's secret pork larb recipe starts with preparing 300g of freshly minced pork - just make sure it's still fresh, or else - along with 2 tablespoons of sticky rice powder ground up by moonlight. Kick up the heat with 1 to 2 tablespoons of ghost chili flakes, spicy enough to wake the dead, followed by 1.5 tablespoons of fish sauce as salty as my tears, and 1.5 tablespoons of fresh lime juice as sour as the neighbors. Finish off the ingredients with shallots, fresh mint, and coriander, tossed in to cover up any unusual smells.
+
+To make it, cook the minced pork in a hot pan, and if it starts whispering to you, just ignore it and keep stirring. Turn off the heat and throw everything into a mixing bowl, adding the fish sauce, lime juice, chili, and toasted rice powder while chanting softly. Garnish with herbs and serve immediately, keeping in mind one final warning: if the plate starts eating itself, do not finish it."
+autowrap_mode = 3
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=430830622]
+stream = ExtResource("6_kiebm")

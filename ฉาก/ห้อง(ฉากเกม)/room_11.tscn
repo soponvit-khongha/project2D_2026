@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://bgg2qt80gt073"]
+
+[ext_resource type="Script" uid="uid://concct1tlnv1" path="res://ฉาก/ห้อง(ฉากเกม)/room_11.gd" id="1_ctod5"]
+[ext_resource type="Texture2D" uid="uid://dehhn4sra4u8i" path="res://ฉาก/ห้อง(ฉากเกม)/เก็บภาพ/20260806_210726.png" id="1_p6seh"]
+[ext_resource type="PackedScene" uid="uid://bgb2j6r5ed7yq" path="res://ตัวระคร/หน้าต่างข้อความตัวละคร/text_box.tscn" id="2_m0ait"]
+[ext_resource type="PackedScene" uid="uid://druktgarfyqs8" path="res://ทดสอบ/เปลี่ยนฉาก/area_2d.tscn" id="3_2qnlu"]
+[ext_resource type="PackedScene" uid="uid://dyyknngasmhhu" path="res://ทดสอบ/เปลี่ยนฉาก/ลง.tscn" id="4_m0ait"]
+[ext_resource type="PackedScene" uid="uid://ieiisrsggpde" path="res://ของ/เสร็จแล้ว/แจกุญ.tscn" id="5_2qnlu"]
+[ext_resource type="AudioStream" uid="uid://dkeorouoetxpa" path="res://ภาพ/เสียง/จั้ม/freesound_community-tension-2-104833.mp3" id="7_brj7p"]
+
+[node name="Room11" type="Node2D" unique_id=1229801256]
+script = ExtResource("1_ctod5")
+
+[node name="ฉาก" type="TextureRect" parent="." unique_id=1589613455]
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("1_p6seh")
+expand_mode = 1
+stretch_mode = 6
+metadata/_edit_use_anchors_ = true
+
+[node name="TextBox" parent="." unique_id=1732555962 instance=ExtResource("2_m0ait")]
+
+[node name="Area2D" parent="." unique_id=1155147205 instance=ExtResource("3_2qnlu")]
+position = Vector2(1, 1)
+
+[node name="ลง" parent="." unique_id=1434753056 instance=ExtResource("4_m0ait")]
+position = Vector2(2, 2)
+target_scene = "uid://bwapxskb4eer1"
+
+[node name="แจกุญ" parent="." unique_id=721500578 instance=ExtResource("5_2qnlu")]
+position = Vector2(320, 398)
+scale = Vector2(0.53220564, 0.47153366)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=595605374]
+stream = ExtResource("7_brj7p")
+parameters/looping = true

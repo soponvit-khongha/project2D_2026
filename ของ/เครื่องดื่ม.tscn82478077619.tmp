@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://dqbrmus88dhrp"]
+
+[ext_resource type="Script" uid="uid://d4hebo10aj3qi" path="res://เครื่องดื่ม.gd" id="1_ktnd0"]
+[ext_resource type="Texture2D" uid="uid://c11ieumse16jm" path="res://ของ/ภาพของ/EnergyDrink-removebg-preview.png" id="2_i1twv"]
+[ext_resource type="Texture2D" uid="uid://bbw2qgqvqbten" path="res://ภาพ/OIP (6).webp" id="3_6h8bu"]
+[ext_resource type="AudioStream" uid="uid://begol1g3betw5" path="res://ภาพ/เสียง/จั้ม/freesound_community-jumpscare_sound-39630.mp3" id="4_ictpk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f3bvx"]
+size = Vector2(186, 434)
+
+[node name="เครื่องดื่ม" type="Area2D" unique_id=25092998]
+script = ExtResource("1_ktnd0")
+
+[node name="EnergyDrinkRemovebgPreview" type="Sprite2D" parent="." unique_id=1709151225]
+texture = ExtResource("2_i1twv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1592210299]
+position = Vector2(1, -28)
+shape = SubResource("RectangleShape2D_f3bvx")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=27741564]
+scale = Vector2(20, 20)
+transform = Transform2D(20, 0, 0, 20, 0, 0)
+
+[node name="Femboy" type="Sprite2D" parent="CanvasLayer" unique_id=512101934]
+position = Vector2(28.800003, 16.200003)
+scale = Vector2(0.121519, 0.06982759)
+texture = ExtResource("3_6h8bu")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=906839721]
+stream = ExtResource("4_ictpk")
+volume_db = -10.0

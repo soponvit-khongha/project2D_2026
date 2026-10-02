@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://f1h1jgkirf25"]
+
+[ext_resource type="Texture2D" uid="uid://bbaoc4d217ln" path="res://ฉาก/ห้อง(ฉากเกม)/เก็บภาพ/20260806_210305.png" id="1_onu26"]
+[ext_resource type="Script" uid="uid://cim7424o44e8k" path="res://ฉาก/ห้อง(ฉากเกม)/room_6.gd" id="1_qttqd"]
+[ext_resource type="PackedScene" uid="uid://bgb2j6r5ed7yq" path="res://ตัวระคร/หน้าต่างข้อความตัวละคร/text_box.tscn" id="2_augwt"]
+[ext_resource type="PackedScene" uid="uid://druktgarfyqs8" path="res://ทดสอบ/เปลี่ยนฉาก/area_2d.tscn" id="3_dqq34"]
+[ext_resource type="PackedScene" uid="uid://dyyknngasmhhu" path="res://ทดสอบ/เปลี่ยนฉาก/ลง.tscn" id="4_c5w86"]
+[ext_resource type="PackedScene" uid="uid://qsq8magv6w2c" path="res://ตัวระคร/ตัวระคร.tscn" id="4_u7xfx"]
+[ext_resource type="PackedScene" uid="uid://shbiapqnpevq" path="res://ทดสอบ/เปลี่ยนฉาก/กด.tscn" id="5_qttqd"]
+
+[node name="room6" type="Node2D" unique_id=1704221676]
+script = ExtResource("1_qttqd")
+
+[node name="ฉาก" type="TextureRect" parent="." unique_id=964832067]
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("1_onu26")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="TextBox" parent="." unique_id=1732555962 node_paths=PackedStringArray("character_node") instance=ExtResource("2_augwt")]
+character_node = NodePath("../ตัวระคร")
+
+[node name="ตัวระคร" parent="." unique_id=828537330 instance=ExtResource("4_u7xfx")]
+position = Vector2(-25, 52)
+
+[node name="Area2D" parent="." unique_id=1155147205 instance=ExtResource("3_dqq34")]
+position = Vector2(1, 1)
+
+[node name="ลง" parent="." unique_id=1434753056 instance=ExtResource("4_c5w86")]
+target_scene = "uid://c6lk0rmanc0q8"
+
+[node name="กด" parent="." unique_id=882885038 instance=ExtResource("5_qttqd")]
+position = Vector2(414, 307)
+target_scene = "uid://dyhuih0p1wtji"
+
+[node name="กด2" parent="." unique_id=1485815293 instance=ExtResource("5_qttqd")]
+position = Vector2(813, 385)
+target_scene = "uid://moe58xde04qi"
+
+[node name="กด3" parent="." unique_id=1420014740 instance=ExtResource("5_qttqd")]
+position = Vector2(100, 378)
+target_scene = "uid://bgq3i5s4kpelu"

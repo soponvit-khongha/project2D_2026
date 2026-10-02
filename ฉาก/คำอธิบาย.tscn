@@ -1,0 +1,93 @@
+[gd_scene format=3 uid="uid://dq5m37xe15axh"]
+
+[ext_resource type="Script" uid="uid://dh8cucv8qm4kv" path="res://ฉาก/คำอธิบาย.gd" id="1_3d7qs"]
+[ext_resource type="FontFile" uid="uid://tthinwtxa75q" path="res://ภาพ/อักศร/Ashes, Ashes Medium_9606.ttf" id="2_xf6c8"]
+[ext_resource type="FontFile" uid="uid://dtfedtjbg5q8m" path="res://ภาพ/อักศร/ms-sans-serif-1.otf" id="3_0pd33"]
+[ext_resource type="PackedScene" uid="uid://druktgarfyqs8" path="res://ทดสอบ/เปลี่ยนฉาก/area_2d.tscn" id="3_kooc0"]
+[ext_resource type="AudioStream" uid="uid://een7dboeoo6a" path="res://ตัวระคร/หน้าต่างข้อความตัวละคร/virtualzero-mechanical-keyboard-typing-sound-effect-hd-379363.mp3" id="5_0pd33"]
+
+[sub_resource type="GDScript" id="GDScript_0pd33"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_2e4yk"]
+font = ExtResource("3_0pd33")
+font_size = 20
+
+[node name="คำอธิบาย" type="Node2D" unique_id=969683863]
+script = ExtResource("1_3d7qs")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=624050652]
+offset_top = 1.0
+offset_right = 1154.0
+offset_bottom = 648.0
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="ColorRect" unique_id=844122627]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -535.5
+offset_top = -292.5
+offset_right = 535.5
+offset_bottom = 256.5
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_fonts/normal_font = ExtResource("2_xf6c8")
+theme_override_fonts/bold_font = ExtResource("2_xf6c8")
+theme_override_fonts/bold_italics_font = ExtResource("2_xf6c8")
+theme_override_fonts/italics_font = ExtResource("2_xf6c8")
+theme_override_fonts/mono_font = ExtResource("2_xf6c8")
+theme_override_font_sizes/normal_font_size = 27
+theme_override_font_sizes/bold_font_size = 27
+theme_override_font_sizes/bold_italics_font_size = 27
+theme_override_font_sizes/italics_font_size = 27
+theme_override_font_sizes/mono_font_size = 27
+bbcode_enabled = true
+script = SubResource("GDScript_0pd33")
+
+[node name="TextureButton" type="TextureButton" parent="." unique_id=728422805]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 1023.0
+offset_top = 592.0
+offset_right = 1128.0
+offset_bottom = 631.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+
+[node name="Label2" type="Label" parent="TextureButton" unique_id=341398578]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -33.5
+offset_top = -8.0
+offset_right = 33.5
+offset_bottom = 8.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 0
+text = "SKIP>>"
+label_settings = SubResource("LabelSettings_2e4yk")
+
+[node name="Area2D" parent="." unique_id=1155147205 instance=ExtResource("3_kooc0")]
+position = Vector2(1, 5)
+
+[node name="VoiceSound" type="AudioStreamPlayer" parent="." unique_id=169760116]
+stream = ExtResource("5_0pd33")
+volume_db = -20.0
+max_polyphony = 18
+
+[connection signal="mouse_entered" from="TextureButton" to="." method="_on_texture_button_mouse_entered"]
+[connection signal="mouse_exited" from="TextureButton" to="." method="_on_texture_button_mouse_exited"]
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]

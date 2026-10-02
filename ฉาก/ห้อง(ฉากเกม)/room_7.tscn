@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://dyhuih0p1wtji"]
+
+[ext_resource type="Texture2D" uid="uid://dont3ybsng4c7" path="res://ฉาก/ห้อง(ฉากเกม)/เก็บภาพ/20260806_210334.png" id="1_clfyt"]
+[ext_resource type="Script" uid="uid://bptqbtouldy15" path="res://ฉาก/ห้อง(ฉากเกม)/room_7.gd" id="1_rojvv"]
+[ext_resource type="PackedScene" uid="uid://bgb2j6r5ed7yq" path="res://ตัวระคร/หน้าต่างข้อความตัวละคร/text_box.tscn" id="2_yjn45"]
+[ext_resource type="PackedScene" uid="uid://druktgarfyqs8" path="res://ทดสอบ/เปลี่ยนฉาก/area_2d.tscn" id="3_ppj5b"]
+[ext_resource type="PackedScene" uid="uid://shbiapqnpevq" path="res://ทดสอบ/เปลี่ยนฉาก/กด.tscn" id="4_7v2yn"]
+[ext_resource type="PackedScene" uid="uid://qsq8magv6w2c" path="res://ตัวระคร/ตัวระคร.tscn" id="4_ltrhe"]
+[ext_resource type="PackedScene" uid="uid://dyyknngasmhhu" path="res://ทดสอบ/เปลี่ยนฉาก/ลง.tscn" id="5_toi2j"]
+[ext_resource type="AudioStream" uid="uid://dkeorouoetxpa" path="res://ภาพ/เสียง/จั้ม/freesound_community-tension-2-104833.mp3" id="6_ihytm"]
+
+[node name="room7" type="Node2D" unique_id=41115876]
+script = ExtResource("1_rojvv")
+
+[node name="ฉาก" type="TextureRect" parent="." unique_id=1595523859]
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("1_clfyt")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="TextBox" parent="." unique_id=1732555962 node_paths=PackedStringArray("character_node") instance=ExtResource("2_yjn45")]
+character_node = NodePath("../ตัวระคร")
+
+[node name="ตัวระคร" parent="." unique_id=828537330 instance=ExtResource("4_ltrhe")]
+position = Vector2(-25, 52)
+
+[node name="Area2D" parent="." unique_id=1155147205 instance=ExtResource("3_ppj5b")]
+position = Vector2(1, 1)
+
+[node name="กด" parent="." unique_id=882885038 instance=ExtResource("4_7v2yn")]
+position = Vector2(597, 381)
+scale = Vector2(1.5662651, 0.73255813)
+target_scene = "uid://ciocq6jnov408"
+
+[node name="ลง" parent="." unique_id=1434753056 instance=ExtResource("5_toi2j")]
+target_scene = "uid://f1h1jgkirf25"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1517206701]
+stream = ExtResource("6_ihytm")
+parameters/looping = true

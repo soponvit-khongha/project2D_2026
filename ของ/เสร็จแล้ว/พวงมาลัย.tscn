@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://bmvqjbtm0e3ct"]
+
+[ext_resource type="Script" uid="uid://cwjewnjva7pyx" path="res://ของ/เสร็จแล้ว/พวงมาลัย.gd" id="1_veynr"]
+[ext_resource type="Texture2D" uid="uid://3obqkrlpxkdo" path="res://ของ/ภาพของ/1000145124.png" id="1_wsujm"]
+[ext_resource type="Texture2D" uid="uid://c6fxjui1rsv33" path="res://ทดสอบ/เปลี่ยนฉาก/เมาส์/icons8-circle-32.png" id="2_4tgpn"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_f3bvx"]
+radius = 72.0
+height = 276.0
+
+[node name="พวงมาลัย" type="Area2D" unique_id=1214457260]
+script = ExtResource("1_veynr")
+custom_cursor_texture = ExtResource("2_4tgpn")
+
+[node name="1000145124" type="Sprite2D" parent="." unique_id=1431524563]
+scale = Vector2(0.18713872, 0.18996063)
+texture = ExtResource("1_wsujm")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=416926145]
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_f3bvx")

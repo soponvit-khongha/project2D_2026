@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://csho3j7j62e3e"]
+
+[ext_resource type="PackedScene" uid="uid://bgb2j6r5ed7yq" path="res://ตัวระคร/หน้าต่างข้อความตัวละคร/text_box.tscn" id="1_fwg6h"]
+[ext_resource type="Script" uid="uid://d2yaqx3jn5vaw" path="res://มินิเกมออกจากวัด/ฉากเดินไปสถานที่ต่อไป.gd" id="1_st6sm"]
+[ext_resource type="PackedScene" uid="uid://qsq8magv6w2c" path="res://ตัวระคร/ตัวระคร.tscn" id="2_st6sm"]
+[ext_resource type="PackedScene" uid="uid://druktgarfyqs8" path="res://ทดสอบ/เปลี่ยนฉาก/area_2d.tscn" id="3_fl3wo"]
+
+[node name="ฉากเดินไปสถานที่ต่อไป" type="Node2D" unique_id=1303092213]
+script = ExtResource("1_st6sm")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1858444447]
+offset_right = 1152.0
+offset_bottom = 648.0
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="TextBox" parent="." unique_id=1732555962 node_paths=PackedStringArray("character_node") instance=ExtResource("1_fwg6h")]
+character_node = NodePath("../ตัวระคร")
+
+[node name="ตัวระคร" parent="." unique_id=828537330 instance=ExtResource("2_st6sm")]
+position = Vector2(-25, 52)
+
+[node name="Area2D" parent="." unique_id=1155147205 instance=ExtResource("3_fl3wo")]
+position = Vector2(1, 1)

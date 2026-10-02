@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://c6lk0rmanc0q8"]
+
+[ext_resource type="Script" uid="uid://2e27fbmcjrgr" path="res://ฉาก/ห้อง(ฉากเกม)/room_3.gd" id="1_ko12x"]
+[ext_resource type="Texture2D" uid="uid://1aptq2fyhrsv" path="res://ฉาก/ห้อง(ฉากเกม)/เก็บภาพ/20260806_204052.png" id="1_vqroa"]
+[ext_resource type="PackedScene" uid="uid://bgb2j6r5ed7yq" path="res://ตัวระคร/หน้าต่างข้อความตัวละคร/text_box.tscn" id="2_yg4u5"]
+[ext_resource type="PackedScene" uid="uid://druktgarfyqs8" path="res://ทดสอบ/เปลี่ยนฉาก/area_2d.tscn" id="3_xoc72"]
+[ext_resource type="PackedScene" uid="uid://dyyknngasmhhu" path="res://ทดสอบ/เปลี่ยนฉาก/ลง.tscn" id="4_ko12x"]
+[ext_resource type="PackedScene" uid="uid://qsq8magv6w2c" path="res://ตัวระคร/ตัวระคร.tscn" id="4_y3b8p"]
+[ext_resource type="PackedScene" uid="uid://djq5y72nahjff" path="res://ทดสอบ/เปลี่ยนฉาก/ซ้าย.tscn" id="5_y3b8p"]
+[ext_resource type="PackedScene" uid="uid://b5pyv2hy2n0ut" path="res://ทดสอบ/เปลี่ยนฉาก/ขวา.tscn" id="7_kb76b"]
+[ext_resource type="Texture2D" uid="uid://b72v7i3xuqwk4" path="res://ทดสอบ/เปลี่ยนฉาก/เมาส์/icons8-scroll-up-48.png" id="7_ko12x"]
+
+[node name="room3" type="Node2D" unique_id=1683789768]
+script = ExtResource("1_ko12x")
+
+[node name="ฉาก" type="TextureRect" parent="." unique_id=754352272]
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("1_vqroa")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="TextBox" parent="." unique_id=1732555962 node_paths=PackedStringArray("character_node") instance=ExtResource("2_yg4u5")]
+character_node = NodePath("../ตัวระคร")
+
+[node name="ตัวระคร" parent="." unique_id=828537330 instance=ExtResource("4_y3b8p")]
+position = Vector2(-25, 52)
+
+[node name="Area2D" parent="." unique_id=1155147205 instance=ExtResource("3_xoc72")]
+
+[node name="ลง" parent="." unique_id=1434753056 instance=ExtResource("4_ko12x")]
+
+[node name="ขวา2" parent="." unique_id=1739670107 instance=ExtResource("7_kb76b")]
+visible = false
+position = Vector2(60.000004, 1145.0001)
+rotation = -1.5703255
+scale = Vector2(0.9931888, 1.6177112)
+target_scene = "uid://3mq66rk52dvm"
+custom_cursor_texture = ExtResource("7_ko12x")
+
+[node name="ขวา" parent="." unique_id=580980206 instance=ExtResource("7_kb76b")]
+visible = false
+preset_direction = 3
+target_scene = "uid://f1h1jgkirf25"
+
+[node name="ซ้าย" parent="." unique_id=226147396 instance=ExtResource("5_y3b8p")]
+target_scene = "uid://dxf8wq2u2d0gg"
+
+[connection signal="input_event" from="ลง" to="." method="_on_ลง_input_event"]

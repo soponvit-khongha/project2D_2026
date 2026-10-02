@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ca871be5dt618"
+path="res://.godot/imported/free horror game soundtrack asset.mp3-4efa5b240b1f3f98895bf0a1d71d4627.mp3str"
+
+[deps]
+
+source_file="res://ภาพ/เสียง/free horror game soundtrack asset.mp3"
+dest_files=["res://.godot/imported/free horror game soundtrack asset.mp3-4efa5b240b1f3f98895bf0a1d71d4627.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

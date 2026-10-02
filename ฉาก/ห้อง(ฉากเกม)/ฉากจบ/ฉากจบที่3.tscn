@@ -1,0 +1,87 @@
+[gd_scene format=3 uid="uid://dknybqx34pbw4"]
+
+[ext_resource type="Texture2D" uid="uid://c5s0ov32f4nde" path="res://ฉาก/ห้อง(ฉากเกม)/เก็บภาพ/เอ็มออนิวรังสิต-สกิน-8.webp" id="1_3ltd8"]
+[ext_resource type="Script" uid="uid://bdkayjpvvlmwa" path="res://ฉาก/ห้อง(ฉากเกม)/ฉากจบ/ฉากจบที่3.gd" id="1_28o8t"]
+[ext_resource type="Texture2D" uid="uid://d1dvclgqbgsn0" path="res://ฉาก/ห้อง(ฉากเกม)/เก็บภาพ/6ece786abb11e520ca6145fdfeb084db-removebg-preview.png" id="2_m7vys"]
+[ext_resource type="FontFile" uid="uid://tthinwtxa75q" path="res://ภาพ/อักศร/Ashes, Ashes Medium_9606.ttf" id="3_28o8t"]
+[ext_resource type="FontFile" uid="uid://dtfedtjbg5q8m" path="res://ภาพ/อักศร/ms-sans-serif-1.otf" id="4_cwrmu"]
+[ext_resource type="AudioStream" uid="uid://b56xnc32m8e2l" path="res://ภาพ/เสียง/mangaletp-funny-laughing-406018.mp3" id="6_28o8t"]
+
+[sub_resource type="GDScript" id="GDScript_0qrqr"]
+script/source = "extends AudioStreamPlayer
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+"
+
+[node name="ฉากจบที่3" type="Node2D" unique_id=617972088]
+script = ExtResource("1_28o8t")
+
+[node name="เอ็มออนิวรังสิตสกิน8" type="Sprite2D" parent="." unique_id=179389539]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(576, 324)
+scale = Vector2(1.2562703, 0.76686394)
+texture = ExtResource("1_3ltd8")
+
+[node name="6Ece786Abb11e520Ca6145Fdfeb084DbRemovebgPreview" type="Sprite2D" parent="." unique_id=1447048106]
+modulate = Color(1, 1, 1, 0.27450982)
+position = Vector2(176, 224)
+texture = ExtResource("2_m7vys")
+
+[node name="TextureButton" type="TextureButton" parent="." unique_id=453830045]
+offset_left = 409.0
+offset_top = 484.0
+offset_right = 718.0
+offset_bottom = 584.0
+mouse_filter = 1
+
+[node name="Label" type="Label" parent="TextureButton" unique_id=1047913624]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_28o8t")
+theme_override_font_sizes/font_size = 120
+text = "End"
+
+[node name="Label3" type="Label" parent="." unique_id=52408113]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 277.63144
+offset_top = -3.0517578e-05
+offset_right = 873.6315
+offset_bottom = 175.99997
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("4_cwrmu")
+theme_override_font_sizes/font_size = 160
+text = "Bad End"
+
+[node name="Label2" type="Label" parent="." unique_id=1994675327]
+offset_left = 336.0
+offset_top = 176.0
+offset_right = 845.0
+offset_bottom = 238.0
+theme_override_fonts/font = ExtResource("4_cwrmu")
+theme_override_font_sizes/font_size = 40
+text = "The Worst Homecoming Ever"
+
+[node name="เพลง" type="AudioStreamPlayer" parent="." unique_id=1624650375]
+stream = ExtResource("6_28o8t")
+autoplay = true
+script = SubResource("GDScript_0qrqr")

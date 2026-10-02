@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://ieiisrsggpde"]
+
+[ext_resource type="Script" uid="uid://yopacdj1lgnn" path="res://ของ/เสร็จแล้ว/แจกุญ.gd" id="1_i5fda"]
+[ext_resource type="Texture2D" uid="uid://5r3id7tx1blk" path="res://ของ/ภาพของ/Key-removebg-preview.png" id="1_j4fal"]
+[ext_resource type="Texture2D" uid="uid://c6fxjui1rsv33" path="res://ทดสอบ/เปลี่ยนฉาก/เมาส์/icons8-circle-32.png" id="2_g2u7t"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_f3bvx"]
+radius = 84.01039
+height = 206.42902
+
+[node name="แจกุญ" type="Area2D" unique_id=721500578]
+script = ExtResource("1_i5fda")
+custom_cursor_texture = ExtResource("2_g2u7t")
+
+[node name="KeyRemovebgPreview" type="Sprite2D" parent="." unique_id=2127551351]
+texture = ExtResource("1_j4fal")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=846693008]
+rotation = 0.87266463
+shape = SubResource("CapsuleShape2D_f3bvx")

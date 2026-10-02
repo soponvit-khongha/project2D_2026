@@ -1,7 +1,0 @@
-[gd_resource type="Shortcut" format=3 uid="uid://bkpwoj8fplbxr"]
-
-[sub_resource type="InputEventAction" id="InputEventAction_chlux"]
-action = &"ui_cancel"
-
-[resource]
-events = [SubResource("InputEventAction_chlux")]

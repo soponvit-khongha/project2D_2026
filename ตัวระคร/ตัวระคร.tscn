@@ -1,0 +1,2146 @@
+[gd_scene format=3 uid="uid://qsq8magv6w2c"]
+
+[ext_resource type="Script" uid="uid://dfwgjxb1eea4a" path="res://ตัวระคร/ตัวระคร.gd" id="1_jmuyl"]
+[ext_resource type="Texture2D" uid="uid://cvxg1nsj54n81" path="res://ตัวระคร/download.png" id="1_tua8l"]
+
+[sub_resource type="Animation" id="Animation_tua8l"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("แขนซ้าย:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-657, -431)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("แขนซ้าย:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("มือขวา:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-981, -510)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("มือขวา:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("ต้นแขนซ้าย:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-658, -361)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("ต้นแขนซ้าย:rotation")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("ผมกลาง:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-508, -369)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("ผมกลาง:rotation")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("ผมขวา:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-544, -371)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("ผมขวา:rotation")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("ผมซ้าย:position")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-473, -373)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("ผมซ้าย:rotation")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("หลุม:position")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-496, -162)]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("หลุม:rotation")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("ตัว:position")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-741, -273)]
+}
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("ตัว:rotation")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/16/type = "value"
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/path = NodePath("แขนขวา:position")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-811, -440)]
+}
+tracks/17/type = "value"
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/path = NodePath("แขนขวา:rotation")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/18/type = "value"
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/path = NodePath("มือซ้าย:position")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-342, -367)]
+}
+tracks/19/type = "value"
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/path = NodePath("มือซ้าย:rotation")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/20/type = "value"
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/path = NodePath("ต้นแขนขวา:position")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-811, -372)]
+}
+tracks/21/type = "value"
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/path = NodePath("ต้นแขนขวา:rotation")
+tracks/21/interp = 1
+tracks/21/loop_wrap = true
+tracks/21/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/22/type = "value"
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/path = NodePath("หัว:position")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-738, -190)]
+}
+tracks/23/type = "value"
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/path = NodePath("หัว:rotation")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/24/type = "value"
+tracks/24/imported = false
+tracks/24/enabled = true
+tracks/24/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม3/ต้นแขนซ้าย/แขนซ้าย/มือซ้าย:position")
+tracks/24/interp = 1
+tracks/24/loop_wrap = true
+tracks/24/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(3, 71)]
+}
+tracks/25/type = "value"
+tracks/25/imported = false
+tracks/25/enabled = true
+tracks/25/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม3/ต้นแขนซ้าย/แขนซ้าย/มือซ้าย:rotation")
+tracks/25/interp = 1
+tracks/25/loop_wrap = true
+tracks/25/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [1.3340538]
+}
+tracks/26/type = "value"
+tracks/26/imported = false
+tracks/26/enabled = true
+tracks/26/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม3/ต้นแขนซ้าย/แขนซ้าย:position")
+tracks/26/interp = 1
+tracks/26/loop_wrap = true
+tracks/26/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-3, 141)]
+}
+tracks/27/type = "value"
+tracks/27/imported = false
+tracks/27/enabled = true
+tracks/27/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม3/ต้นแขนซ้าย/แขนซ้าย:rotation")
+tracks/27/interp = 1
+tracks/27/loop_wrap = true
+tracks/27/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/28/type = "value"
+tracks/28/imported = false
+tracks/28/enabled = true
+tracks/28/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม3/ต้นแขนซ้าย:position")
+tracks/28/interp = 1
+tracks/28/loop_wrap = true
+tracks/28/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-19, 42)]
+}
+tracks/29/type = "value"
+tracks/29/imported = false
+tracks/29/enabled = true
+tracks/29/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม3/ต้นแขนซ้าย:rotation")
+tracks/29/interp = 1
+tracks/29/loop_wrap = true
+tracks/29/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/30/type = "value"
+tracks/30/imported = false
+tracks/30/enabled = true
+tracks/30/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม3:position")
+tracks/30/interp = 1
+tracks/30/loop_wrap = true
+tracks/30/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-77, -144)]
+}
+tracks/31/type = "value"
+tracks/31/imported = false
+tracks/31/enabled = true
+tracks/31/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม3:rotation")
+tracks/31/interp = 1
+tracks/31/loop_wrap = true
+tracks/31/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/32/type = "value"
+tracks/32/imported = false
+tracks/32/enabled = true
+tracks/32/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม2/ต้นแขนขวา/แขนขวา/มือขวา:position")
+tracks/32/interp = 1
+tracks/32/loop_wrap = true
+tracks/32/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(12.049462, 92.86987)]
+}
+tracks/33/type = "value"
+tracks/33/imported = false
+tracks/33/enabled = true
+tracks/33/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม2/ต้นแขนขวา/แขนขวา/มือขวา:rotation")
+tracks/33/interp = 1
+tracks/33/loop_wrap = true
+tracks/33/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [1.5653026]
+}
+tracks/34/type = "value"
+tracks/34/imported = false
+tracks/34/enabled = true
+tracks/34/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม2/ต้นแขนขวา/แขนขวา:position")
+tracks/34/interp = 1
+tracks/34/loop_wrap = true
+tracks/34/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-1.577034, 126.02584)]
+}
+tracks/35/type = "value"
+tracks/35/imported = false
+tracks/35/enabled = true
+tracks/35/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม2/ต้นแขนขวา/แขนขวา:rotation")
+tracks/35/interp = 1
+tracks/35/loop_wrap = true
+tracks/35/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/36/type = "value"
+tracks/36/imported = false
+tracks/36/enabled = true
+tracks/36/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม2/ต้นแขนขวา:position")
+tracks/36/interp = 1
+tracks/36/loop_wrap = true
+tracks/36/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(10.391872, 7.1847486)]
+}
+tracks/37/type = "value"
+tracks/37/imported = false
+tracks/37/enabled = true
+tracks/37/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม2/ต้นแขนขวา:rotation")
+tracks/37/interp = 1
+tracks/37/loop_wrap = true
+tracks/37/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/38/type = "value"
+tracks/38/imported = false
+tracks/38/enabled = true
+tracks/38/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม2:position")
+tracks/38/interp = 1
+tracks/38/loop_wrap = true
+tracks/38/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(61, -150)]
+}
+tracks/39/type = "value"
+tracks/39/imported = false
+tracks/39/enabled = true
+tracks/39/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม2:rotation")
+tracks/39/interp = 1
+tracks/39/loop_wrap = true
+tracks/39/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/40/type = "value"
+tracks/40/imported = false
+tracks/40/enabled = true
+tracks/40/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม1/หัว/ผมกลาง:position")
+tracks/40/interp = 1
+tracks/40/loop_wrap = true
+tracks/40/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(16, -58)]
+}
+tracks/41/type = "value"
+tracks/41/imported = false
+tracks/41/enabled = true
+tracks/41/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม1/หัว/ผมกลาง:rotation")
+tracks/41/interp = 1
+tracks/41/loop_wrap = true
+tracks/41/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [1.8806765]
+}
+tracks/42/type = "value"
+tracks/42/imported = false
+tracks/42/enabled = true
+tracks/42/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม1/หัว/ผมขวา:position")
+tracks/42/interp = 1
+tracks/42/loop_wrap = true
+tracks/42/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(31, -58)]
+}
+tracks/43/type = "value"
+tracks/43/imported = false
+tracks/43/enabled = true
+tracks/43/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม1/หัว/ผมขวา:rotation")
+tracks/43/interp = 1
+tracks/43/loop_wrap = true
+tracks/43/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [1.2949188]
+}
+tracks/44/type = "value"
+tracks/44/imported = false
+tracks/44/enabled = true
+tracks/44/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม1/หัว/ผมซ้าย:position")
+tracks/44/interp = 1
+tracks/44/loop_wrap = true
+tracks/44/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-2, -49)]
+}
+tracks/45/type = "value"
+tracks/45/imported = false
+tracks/45/enabled = true
+tracks/45/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม1/หัว/ผมซ้าย:rotation")
+tracks/45/interp = 1
+tracks/45/loop_wrap = true
+tracks/45/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [2.1260443]
+}
+tracks/46/type = "value"
+tracks/46/imported = false
+tracks/46/enabled = true
+tracks/46/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม1/หัว/หลุม:position")
+tracks/46/interp = 1
+tracks/46/loop_wrap = true
+tracks/46/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(27, -8)]
+}
+tracks/47/type = "value"
+tracks/47/imported = false
+tracks/47/enabled = true
+tracks/47/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม1/หัว/หลุม:rotation")
+tracks/47/interp = 1
+tracks/47/loop_wrap = true
+tracks/47/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.095158696]
+}
+tracks/48/type = "value"
+tracks/48/imported = false
+tracks/48/enabled = true
+tracks/48/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม1/หัว:position")
+tracks/48/interp = 1
+tracks/48/loop_wrap = true
+tracks/48/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(18, -89)]
+}
+tracks/49/type = "value"
+tracks/49/imported = false
+tracks/49/enabled = true
+tracks/49/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม1/หัว:rotation")
+tracks/49/interp = 1
+tracks/49/loop_wrap = true
+tracks/49/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/50/type = "value"
+tracks/50/imported = false
+tracks/50/enabled = true
+tracks/50/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม1:position")
+tracks/50/interp = 1
+tracks/50/loop_wrap = true
+tracks/50/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-13, -136)]
+}
+tracks/51/type = "value"
+tracks/51/imported = false
+tracks/51/enabled = true
+tracks/51/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม1:rotation")
+tracks/51/interp = 1
+tracks/51/loop_wrap = true
+tracks/51/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/52/type = "value"
+tracks/52/imported = false
+tracks/52/enabled = true
+tracks/52/path = NodePath("Skeleton2D/ตัว:position")
+tracks/52/interp = 1
+tracks/52/loop_wrap = true
+tracks/52/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(323, 508)]
+}
+tracks/53/type = "value"
+tracks/53/imported = false
+tracks/53/enabled = true
+tracks/53/path = NodePath("Skeleton2D/ตัว:rotation")
+tracks/53/interp = 1
+tracks/53/loop_wrap = true
+tracks/53/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.01129221]
+}
+
+[sub_resource type="Animation" id="Animation_jmuyl"]
+resource_name = "ตกใจ"
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("แขนซ้าย:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-657, -431)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("แขนซ้าย:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("มือขวา:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-981, -510)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("มือขวา:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("ต้นแขนซ้าย:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-658, -361)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("ต้นแขนซ้าย:rotation")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("ผมกลาง:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-508, -369)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("ผมกลาง:rotation")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("ผมขวา:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-544, -371)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("ผมขวา:rotation")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("ผมซ้าย:position")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-473, -373)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("ผมซ้าย:rotation")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("หลุม:position")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-496, -162)]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("หลุม:rotation")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("ตัว:position")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-741, -273)]
+}
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("ตัว:rotation")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/16/type = "value"
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/path = NodePath("แขนขวา:position")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-811, -440)]
+}
+tracks/17/type = "value"
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/path = NodePath("แขนขวา:rotation")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/18/type = "value"
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/path = NodePath("มือซ้าย:position")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-342, -367)]
+}
+tracks/19/type = "value"
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/path = NodePath("มือซ้าย:rotation")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/20/type = "value"
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/path = NodePath("ต้นแขนขวา:position")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-811, -372)]
+}
+tracks/21/type = "value"
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/path = NodePath("ต้นแขนขวา:rotation")
+tracks/21/interp = 1
+tracks/21/loop_wrap = true
+tracks/21/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/22/type = "value"
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/path = NodePath("หัว:position")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-738, -190)]
+}
+tracks/23/type = "value"
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/path = NodePath("หัว:rotation")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/24/type = "value"
+tracks/24/imported = false
+tracks/24/enabled = true
+tracks/24/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม3/ต้นแขนซ้าย/แขนซ้าย/มือซ้าย:position")
+tracks/24/interp = 1
+tracks/24/loop_wrap = true
+tracks/24/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(3, 71)]
+}
+tracks/25/type = "value"
+tracks/25/imported = false
+tracks/25/enabled = true
+tracks/25/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม3/ต้นแขนซ้าย/แขนซ้าย/มือซ้าย:rotation")
+tracks/25/interp = 1
+tracks/25/loop_wrap = true
+tracks/25/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [1.3340538]
+}
+tracks/26/type = "value"
+tracks/26/imported = false
+tracks/26/enabled = true
+tracks/26/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม3/ต้นแขนซ้าย/แขนซ้าย:position")
+tracks/26/interp = 1
+tracks/26/loop_wrap = true
+tracks/26/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-3, 141), Vector2(43.1258, 115.196205)]
+}
+tracks/27/type = "value"
+tracks/27/imported = false
+tracks/27/enabled = true
+tracks/27/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม3/ต้นแขนซ้าย/แขนซ้าย:rotation")
+tracks/27/interp = 1
+tracks/27/loop_wrap = true
+tracks/27/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, -1.3130519]
+}
+tracks/28/type = "value"
+tracks/28/imported = false
+tracks/28/enabled = true
+tracks/28/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม3/ต้นแขนซ้าย:position")
+tracks/28/interp = 1
+tracks/28/loop_wrap = true
+tracks/28/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-19, 42), Vector2(-9.344105, 36.64686)]
+}
+tracks/29/type = "value"
+tracks/29/imported = false
+tracks/29/enabled = true
+tracks/29/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม3/ต้นแขนซ้าย:rotation")
+tracks/29/interp = 1
+tracks/29/loop_wrap = true
+tracks/29/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, -0.56655216]
+}
+tracks/30/type = "value"
+tracks/30/imported = false
+tracks/30/enabled = true
+tracks/30/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม3:position")
+tracks/30/interp = 1
+tracks/30/loop_wrap = true
+tracks/30/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-77, -144)]
+}
+tracks/31/type = "value"
+tracks/31/imported = false
+tracks/31/enabled = true
+tracks/31/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม3:rotation")
+tracks/31/interp = 1
+tracks/31/loop_wrap = true
+tracks/31/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/32/type = "value"
+tracks/32/imported = false
+tracks/32/enabled = true
+tracks/32/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม2/ต้นแขนขวา/แขนขวา/มือขวา:position")
+tracks/32/interp = 1
+tracks/32/loop_wrap = true
+tracks/32/keys = {
+"times": PackedFloat32Array(0, 0.73333335),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(12.049462, 92.86987), Vector2(10.427301, 95.81343)]
+}
+tracks/33/type = "value"
+tracks/33/imported = false
+tracks/33/enabled = true
+tracks/33/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม2/ต้นแขนขวา/แขนขวา/มือขวา:rotation")
+tracks/33/interp = 1
+tracks/33/loop_wrap = true
+tracks/33/keys = {
+"times": PackedFloat32Array(0, 0.5, 0.73333335),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [1.5653026, 1.0965852, 1.6849811]
+}
+tracks/34/type = "value"
+tracks/34/imported = false
+tracks/34/enabled = true
+tracks/34/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม2/ต้นแขนขวา/แขนขวา:position")
+tracks/34/interp = 1
+tracks/34/loop_wrap = true
+tracks/34/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-1.577034, 126.02584)]
+}
+tracks/35/type = "value"
+tracks/35/imported = false
+tracks/35/enabled = true
+tracks/35/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม2/ต้นแขนขวา/แขนขวา:rotation")
+tracks/35/interp = 1
+tracks/35/loop_wrap = true
+tracks/35/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, -2.2339044]
+}
+tracks/36/type = "value"
+tracks/36/imported = false
+tracks/36/enabled = true
+tracks/36/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม2/ต้นแขนขวา:position")
+tracks/36/interp = 1
+tracks/36/loop_wrap = true
+tracks/36/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(10.391872, 7.1847486)]
+}
+tracks/37/type = "value"
+tracks/37/imported = false
+tracks/37/enabled = true
+tracks/37/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม2/ต้นแขนขวา:rotation")
+tracks/37/interp = 1
+tracks/37/loop_wrap = true
+tracks/37/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/38/type = "value"
+tracks/38/imported = false
+tracks/38/enabled = true
+tracks/38/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม2:position")
+tracks/38/interp = 1
+tracks/38/loop_wrap = true
+tracks/38/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(61, -150)]
+}
+tracks/39/type = "value"
+tracks/39/imported = false
+tracks/39/enabled = true
+tracks/39/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม2:rotation")
+tracks/39/interp = 1
+tracks/39/loop_wrap = true
+tracks/39/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, -0.30380592]
+}
+tracks/40/type = "value"
+tracks/40/imported = false
+tracks/40/enabled = true
+tracks/40/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม1/หัว/ผมกลาง:position")
+tracks/40/interp = 1
+tracks/40/loop_wrap = true
+tracks/40/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(16, -58)]
+}
+tracks/41/type = "value"
+tracks/41/imported = false
+tracks/41/enabled = true
+tracks/41/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม1/หัว/ผมกลาง:rotation")
+tracks/41/interp = 1
+tracks/41/loop_wrap = true
+tracks/41/keys = {
+"times": PackedFloat32Array(0, 0.5, 0.73333335),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [1.8806765, 2.1102824, 1.6254318]
+}
+tracks/42/type = "value"
+tracks/42/imported = false
+tracks/42/enabled = true
+tracks/42/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม1/หัว/ผมขวา:position")
+tracks/42/interp = 1
+tracks/42/loop_wrap = true
+tracks/42/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(31, -58)]
+}
+tracks/43/type = "value"
+tracks/43/imported = false
+tracks/43/enabled = true
+tracks/43/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม1/หัว/ผมขวา:rotation")
+tracks/43/interp = 1
+tracks/43/loop_wrap = true
+tracks/43/keys = {
+"times": PackedFloat32Array(0, 0.5, 0.73333335),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [1.2949188, 0.8184806, 1.2538457]
+}
+tracks/44/type = "value"
+tracks/44/imported = false
+tracks/44/enabled = true
+tracks/44/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม1/หัว/ผมซ้าย:position")
+tracks/44/interp = 1
+tracks/44/loop_wrap = true
+tracks/44/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-2, -49)]
+}
+tracks/45/type = "value"
+tracks/45/imported = false
+tracks/45/enabled = true
+tracks/45/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม1/หัว/ผมซ้าย:rotation")
+tracks/45/interp = 1
+tracks/45/loop_wrap = true
+tracks/45/keys = {
+"times": PackedFloat32Array(0, 0.5, 0.73333335),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [2.1260443, 2.5791948, 1.855744]
+}
+tracks/46/type = "value"
+tracks/46/imported = false
+tracks/46/enabled = true
+tracks/46/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม1/หัว/หลุม:position")
+tracks/46/interp = 1
+tracks/46/loop_wrap = true
+tracks/46/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(27, -8)]
+}
+tracks/47/type = "value"
+tracks/47/imported = false
+tracks/47/enabled = true
+tracks/47/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม1/หัว/หลุม:rotation")
+tracks/47/interp = 1
+tracks/47/loop_wrap = true
+tracks/47/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.095158696]
+}
+tracks/48/type = "value"
+tracks/48/imported = false
+tracks/48/enabled = true
+tracks/48/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม1/หัว:position")
+tracks/48/interp = 1
+tracks/48/loop_wrap = true
+tracks/48/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(18, -89), Vector2(29.556118, -75.95021)]
+}
+tracks/49/type = "value"
+tracks/49/imported = false
+tracks/49/enabled = true
+tracks/49/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม1/หัว:rotation")
+tracks/49/interp = 1
+tracks/49/loop_wrap = true
+tracks/49/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 0.28399166]
+}
+tracks/50/type = "value"
+tracks/50/imported = false
+tracks/50/enabled = true
+tracks/50/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม1:position")
+tracks/50/interp = 1
+tracks/50/loop_wrap = true
+tracks/50/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-13, -136)]
+}
+tracks/51/type = "value"
+tracks/51/imported = false
+tracks/51/enabled = true
+tracks/51/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม1:rotation")
+tracks/51/interp = 1
+tracks/51/loop_wrap = true
+tracks/51/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/52/type = "value"
+tracks/52/imported = false
+tracks/52/enabled = true
+tracks/52/path = NodePath("Skeleton2D/ตัว:position")
+tracks/52/interp = 1
+tracks/52/loop_wrap = true
+tracks/52/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(323, 508)]
+}
+tracks/53/type = "value"
+tracks/53/imported = false
+tracks/53/enabled = true
+tracks/53/path = NodePath("Skeleton2D/ตัว:rotation")
+tracks/53/interp = 1
+tracks/53/loop_wrap = true
+tracks/53/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.01129221, -0.20055963]
+}
+
+[sub_resource type="Animation" id="Animation_n3re3"]
+resource_name = "ยืนเฉยๆ"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("แขนซ้าย:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-657, -431)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("แขนซ้าย:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("มือขวา:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-981, -510)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("มือขวา:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("ต้นแขนซ้าย:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-658, -361)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("ต้นแขนซ้าย:rotation")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("ผมกลาง:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-508, -369)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("ผมกลาง:rotation")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("ผมขวา:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-544, -371)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("ผมขวา:rotation")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("ผมซ้าย:position")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-473, -373)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("ผมซ้าย:rotation")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("หลุม:position")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-496, -162)]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("หลุม:rotation")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("ตัว:position")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-741, -273)]
+}
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("ตัว:rotation")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/16/type = "value"
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/path = NodePath("แขนขวา:position")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-811, -440)]
+}
+tracks/17/type = "value"
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/path = NodePath("แขนขวา:rotation")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/18/type = "value"
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/path = NodePath("มือซ้าย:position")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-342, -367)]
+}
+tracks/19/type = "value"
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/path = NodePath("มือซ้าย:rotation")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/20/type = "value"
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/path = NodePath("ต้นแขนขวา:position")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-811, -372)]
+}
+tracks/21/type = "value"
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/path = NodePath("ต้นแขนขวา:rotation")
+tracks/21/interp = 1
+tracks/21/loop_wrap = true
+tracks/21/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/22/type = "value"
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/path = NodePath("หัว:position")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-738, -190)]
+}
+tracks/23/type = "value"
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/path = NodePath("หัว:rotation")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/24/type = "value"
+tracks/24/imported = false
+tracks/24/enabled = true
+tracks/24/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม3/ต้นแขนซ้าย/แขนซ้าย/มือซ้าย:position")
+tracks/24/interp = 1
+tracks/24/loop_wrap = true
+tracks/24/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(3, 71)]
+}
+tracks/25/type = "value"
+tracks/25/imported = false
+tracks/25/enabled = true
+tracks/25/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม3/ต้นแขนซ้าย/แขนซ้าย/มือซ้าย:rotation")
+tracks/25/interp = 1
+tracks/25/loop_wrap = true
+tracks/25/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [1.3340538]
+}
+tracks/26/type = "value"
+tracks/26/imported = false
+tracks/26/enabled = true
+tracks/26/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม3/ต้นแขนซ้าย/แขนซ้าย:position")
+tracks/26/interp = 1
+tracks/26/loop_wrap = true
+tracks/26/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-3, 141)]
+}
+tracks/27/type = "value"
+tracks/27/imported = false
+tracks/27/enabled = true
+tracks/27/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม3/ต้นแขนซ้าย/แขนซ้าย:rotation")
+tracks/27/interp = 1
+tracks/27/loop_wrap = true
+tracks/27/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/28/type = "value"
+tracks/28/imported = false
+tracks/28/enabled = true
+tracks/28/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม3/ต้นแขนซ้าย:position")
+tracks/28/interp = 1
+tracks/28/loop_wrap = true
+tracks/28/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-19, 42)]
+}
+tracks/29/type = "value"
+tracks/29/imported = false
+tracks/29/enabled = true
+tracks/29/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม3/ต้นแขนซ้าย:rotation")
+tracks/29/interp = 1
+tracks/29/loop_wrap = true
+tracks/29/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/30/type = "value"
+tracks/30/imported = false
+tracks/30/enabled = true
+tracks/30/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม3:position")
+tracks/30/interp = 1
+tracks/30/loop_wrap = true
+tracks/30/keys = {
+"times": PackedFloat32Array(0, 0.8666667, 1, 1.6666666),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-77, -144), Vector2(-74.47211, -146.89261), Vector2(-73.342354, -148.18536), Vector2(-81.771614, -148.03516)]
+}
+tracks/31/type = "value"
+tracks/31/imported = false
+tracks/31/enabled = true
+tracks/31/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม3:rotation")
+tracks/31/interp = 1
+tracks/31/loop_wrap = true
+tracks/31/keys = {
+"times": PackedFloat32Array(0, 1, 1.6666666),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, 0.1455724, -0.0913616]
+}
+tracks/32/type = "value"
+tracks/32/imported = false
+tracks/32/enabled = true
+tracks/32/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม2/ต้นแขนขวา/แขนขวา/มือขวา:position")
+tracks/32/interp = 1
+tracks/32/loop_wrap = true
+tracks/32/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(12.049462, 92.86987)]
+}
+tracks/33/type = "value"
+tracks/33/imported = false
+tracks/33/enabled = true
+tracks/33/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม2/ต้นแขนขวา/แขนขวา/มือขวา:rotation")
+tracks/33/interp = 1
+tracks/33/loop_wrap = true
+tracks/33/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [1.5653026]
+}
+tracks/34/type = "value"
+tracks/34/imported = false
+tracks/34/enabled = true
+tracks/34/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม2/ต้นแขนขวา/แขนขวา:position")
+tracks/34/interp = 1
+tracks/34/loop_wrap = true
+tracks/34/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-1.577034, 126.02584)]
+}
+tracks/35/type = "value"
+tracks/35/imported = false
+tracks/35/enabled = true
+tracks/35/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม2/ต้นแขนขวา/แขนขวา:rotation")
+tracks/35/interp = 1
+tracks/35/loop_wrap = true
+tracks/35/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/36/type = "value"
+tracks/36/imported = false
+tracks/36/enabled = true
+tracks/36/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม2/ต้นแขนขวา:position")
+tracks/36/interp = 1
+tracks/36/loop_wrap = true
+tracks/36/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(10.391872, 7.1847486)]
+}
+tracks/37/type = "value"
+tracks/37/imported = false
+tracks/37/enabled = true
+tracks/37/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม2/ต้นแขนขวา:rotation")
+tracks/37/interp = 1
+tracks/37/loop_wrap = true
+tracks/37/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/38/type = "value"
+tracks/38/imported = false
+tracks/38/enabled = true
+tracks/38/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม2:position")
+tracks/38/interp = 1
+tracks/38/loop_wrap = true
+tracks/38/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(61, -150)]
+}
+tracks/39/type = "value"
+tracks/39/imported = false
+tracks/39/enabled = true
+tracks/39/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม2:rotation")
+tracks/39/interp = 1
+tracks/39/loop_wrap = true
+tracks/39/keys = {
+"times": PackedFloat32Array(0, 1, 1.6333333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, -0.07841586, 0.1266672]
+}
+tracks/40/type = "value"
+tracks/40/imported = false
+tracks/40/enabled = true
+tracks/40/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม1/หัว/ผมกลาง:position")
+tracks/40/interp = 1
+tracks/40/loop_wrap = true
+tracks/40/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(16, -58)]
+}
+tracks/41/type = "value"
+tracks/41/imported = false
+tracks/41/enabled = true
+tracks/41/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม1/หัว/ผมกลาง:rotation")
+tracks/41/interp = 1
+tracks/41/loop_wrap = true
+tracks/41/keys = {
+"times": PackedFloat32Array(0, 1, 1.6333333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [1.8806765, 1.9931533, 1.6486533]
+}
+tracks/42/type = "value"
+tracks/42/imported = false
+tracks/42/enabled = true
+tracks/42/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม1/หัว/ผมขวา:position")
+tracks/42/interp = 1
+tracks/42/loop_wrap = true
+tracks/42/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(31, -58)]
+}
+tracks/43/type = "value"
+tracks/43/imported = false
+tracks/43/enabled = true
+tracks/43/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม1/หัว/ผมขวา:rotation")
+tracks/43/interp = 1
+tracks/43/loop_wrap = true
+tracks/43/keys = {
+"times": PackedFloat32Array(0, 1, 1.6333333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [1.2949188, 1.1808897, 0.8601311]
+}
+tracks/44/type = "value"
+tracks/44/imported = false
+tracks/44/enabled = true
+tracks/44/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม1/หัว/ผมซ้าย:position")
+tracks/44/interp = 1
+tracks/44/loop_wrap = true
+tracks/44/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-2, -49)]
+}
+tracks/45/type = "value"
+tracks/45/imported = false
+tracks/45/enabled = true
+tracks/45/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม1/หัว/ผมซ้าย:rotation")
+tracks/45/interp = 1
+tracks/45/loop_wrap = true
+tracks/45/keys = {
+"times": PackedFloat32Array(0, 1, 1.6333333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [2.1260443, 2.4040303, 1.7914762]
+}
+tracks/46/type = "value"
+tracks/46/imported = false
+tracks/46/enabled = true
+tracks/46/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม1/หัว/หลุม:position")
+tracks/46/interp = 1
+tracks/46/loop_wrap = true
+tracks/46/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(27, -8)]
+}
+tracks/47/type = "value"
+tracks/47/imported = false
+tracks/47/enabled = true
+tracks/47/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม1/หัว/หลุม:rotation")
+tracks/47/interp = 1
+tracks/47/loop_wrap = true
+tracks/47/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.095158696]
+}
+tracks/48/type = "value"
+tracks/48/imported = false
+tracks/48/enabled = true
+tracks/48/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม1/หัว:position")
+tracks/48/interp = 1
+tracks/48/loop_wrap = true
+tracks/48/keys = {
+"times": PackedFloat32Array(0, 1, 1.6333333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(18, -89), Vector2(19.66117, -85.04441), Vector2(14.9372, -89.36692)]
+}
+tracks/49/type = "value"
+tracks/49/imported = false
+tracks/49/enabled = true
+tracks/49/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม1/หัว:rotation")
+tracks/49/interp = 1
+tracks/49/loop_wrap = true
+tracks/49/keys = {
+"times": PackedFloat32Array(0, 1, 1.6333333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, -0.00751698, -0.074378826]
+}
+tracks/50/type = "value"
+tracks/50/imported = false
+tracks/50/enabled = true
+tracks/50/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม1:position")
+tracks/50/interp = 1
+tracks/50/loop_wrap = true
+tracks/50/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-13, -136)]
+}
+tracks/51/type = "value"
+tracks/51/imported = false
+tracks/51/enabled = true
+tracks/51/path = NodePath("Skeleton2D/ตัว/จุดเชื่อม1:rotation")
+tracks/51/interp = 1
+tracks/51/loop_wrap = true
+tracks/51/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/52/type = "value"
+tracks/52/imported = false
+tracks/52/enabled = true
+tracks/52/path = NodePath("Skeleton2D/ตัว:position")
+tracks/52/interp = 1
+tracks/52/loop_wrap = true
+tracks/52/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(323, 508)]
+}
+tracks/53/type = "value"
+tracks/53/imported = false
+tracks/53/enabled = true
+tracks/53/path = NodePath("Skeleton2D/ตัว:rotation")
+tracks/53/interp = 1
+tracks/53/loop_wrap = true
+tracks/53/keys = {
+"times": PackedFloat32Array(0, 1, 1.6333333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.01129221, -0.06630917, 0.0119284615]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_n3re3"]
+_data = {
+&"RESET": SubResource("Animation_tua8l"),
+&"ตกใจ": SubResource("Animation_jmuyl"),
+&"ยืนเฉยๆ": SubResource("Animation_n3re3")
+}
+
+[node name="ตัวระคร" type="Node2D" unique_id=828537330]
+script = ExtResource("1_jmuyl")
+
+[node name="Skeleton2D" type="Skeleton2D" parent="." unique_id=1609329974]
+position = Vector2(2, 0)
+
+[node name="ตัว" type="Bone2D" parent="Skeleton2D" unique_id=1376420409]
+position = Vector2(323, 508)
+rotation = 0.01129221
+scale = Vector2(0.9999986, 0.9999986)
+rest = Transform2D(0.9999362, 0.01129197, -0.01129197, 0.9999362, 323, 508)
+
+[node name="จุดเชื่อม1" type="Bone2D" parent="Skeleton2D/ตัว" unique_id=2043387734]
+position = Vector2(-13, -136)
+rest = Transform2D(1, 0, 0, 1, -13, -136)
+
+[node name="หัว" type="Bone2D" parent="Skeleton2D/ตัว/จุดเชื่อม1" unique_id=997292183]
+position = Vector2(18, -89)
+rest = Transform2D(1, 0, 0, 1, 18, -89)
+
+[node name="หลุม" type="Bone2D" parent="Skeleton2D/ตัว/จุดเชื่อม1/หัว" unique_id=1766359819]
+position = Vector2(27, -8)
+rotation = 0.095158696
+rest = Transform2D(0.9954758, 0.095015146, -0.095015146, 0.9954758, 27, -8)
+
+[node name="ผมซ้าย" type="Bone2D" parent="Skeleton2D/ตัว/จุดเชื่อม1/หัว" unique_id=1327431076]
+position = Vector2(-2, -49)
+rotation = 2.1260443
+scale = Vector2(0.99999994, 0.99999994)
+rest = Transform2D(-0.527154, 0.8497698, -0.8497698, -0.527154, -2, -49)
+
+[node name="ผมขวา" type="Bone2D" parent="Skeleton2D/ตัว/จุดเชื่อม1/หัว" unique_id=790990376]
+position = Vector2(31, -58)
+rotation = 1.2949188
+scale = Vector2(0.99999964, 0.99999964)
+rest = Transform2D(0.27239138, 0.96218646, -0.96218646, 0.27239138, 31, -58)
+
+[node name="ผมกลาง" type="Bone2D" parent="Skeleton2D/ตัว/จุดเชื่อม1/หัว" unique_id=1483662610]
+position = Vector2(16, -58)
+rotation = 1.8806765
+rest = Transform2D(-0.30494452, 0.9523701, -0.9523701, -0.30494452, 16, -58)
+
+[node name="จุดเชื่อม2" type="Bone2D" parent="Skeleton2D/ตัว" unique_id=640007760]
+position = Vector2(61, -150)
+scale = Vector2(0.99999994, 0.99999994)
+rest = Transform2D(1, 0, 0, 1, 61, -150)
+
+[node name="ต้นแขนขวา" type="Bone2D" parent="Skeleton2D/ตัว/จุดเชื่อม2" unique_id=969537273]
+position = Vector2(10.391872, 7.1847486)
+rest = Transform2D(1, 0, 0, 1, 10.391872, 7.1847486)
+
+[node name="แขนขวา" type="Bone2D" parent="Skeleton2D/ตัว/จุดเชื่อม2/ต้นแขนขวา" unique_id=1265495995]
+position = Vector2(-1.577034, 126.02584)
+rest = Transform2D(1, 0, 0, 1, -1.577034, 126.02584)
+
+[node name="มือขวา" type="Bone2D" parent="Skeleton2D/ตัว/จุดเชื่อม2/ต้นแขนขวา/แขนขวา" unique_id=537920690]
+position = Vector2(12.049462, 92.86987)
+rotation = 1.5653026
+rest = Transform2D(0.005493689, 0.9999849, -0.9999849, 0.005493689, 12.049462, 92.86987)
+
+[node name="จุดเชื่อม3" type="Bone2D" parent="Skeleton2D/ตัว" unique_id=1405470456]
+position = Vector2(-77, -144)
+rest = Transform2D(1, 0, 0, 1, -77, -144)
+
+[node name="ต้นแขนซ้าย" type="Bone2D" parent="Skeleton2D/ตัว/จุดเชื่อม3" unique_id=615373712]
+position = Vector2(-19, 42)
+rest = Transform2D(1, 0, 0, 1, -19, 42)
+
+[node name="แขนซ้าย" type="Bone2D" parent="Skeleton2D/ตัว/จุดเชื่อม3/ต้นแขนซ้าย" unique_id=1356072049]
+position = Vector2(-3, 141)
+rest = Transform2D(1, 0, 0, 1, -3, 141)
+
+[node name="มือซ้าย" type="Bone2D" parent="Skeleton2D/ตัว/จุดเชื่อม3/ต้นแขนซ้าย/แขนซ้าย" unique_id=1367743552]
+position = Vector2(3, 71)
+rotation = 1.3340538
+rest = Transform2D(0.2345373, 0.9721071, -0.9721071, 0.2345373, 3, 71)
+
+[node name="หัว" type="Polygon2D" parent="." unique_id=1841201502]
+position = Vector2(-738, -190)
+color = Color(0.9296875, 0.9296875, 0.9296875, 1)
+texture = ExtResource("1_tua8l")
+skeleton = NodePath("../Skeleton2D")
+polygon = PackedVector2Array(1024, 376, 1000.00006, 400, 992.00006, 424, 992.00006, 456, 1008, 472, 1024, 496, 1024, 520, 1016.00006, 528, 1032, 544, 1056, 552, 1072, 552, 1080, 528, 1096, 520, 1120, 496, 1128, 480, 1136, 464, 1144, 440, 1136, 416, 1120, 400, 1104, 376, 1080, 368, 1048, 368)
+uv = PackedVector2Array(1024, 376, 1000.00006, 400, 992.00006, 424, 992.00006, 456, 1008, 472, 1024, 496, 1024, 520, 1016.00006, 528, 1032, 544, 1056, 552, 1072, 552, 1080, 528, 1096, 520, 1120, 496, 1128, 480, 1136, 464, 1144, 440, 1136, 416, 1120, 400, 1104, 376, 1080, 368, 1048, 368)
+bones = ["ตัว", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม1", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม1/หัว", PackedFloat32Array(0.98, 0.98, 0.98, 0.98, 0.98, 0.98, 0.98, 0.98, 0.98, 0.98, 0.98, 0.98, 0.98, 0.98, 0.98, 0.98, 0.98, 0.98, 0.98, 0.98, 0.98, 0.98), "ตัว/จุดเชื่อม1/หัว/หลุม", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม1/หัว/ผมซ้าย", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม1/หัว/ผมขวา", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม1/หัว/ผมกลาง", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม2", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม2/ต้นแขนขวา", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม2/ต้นแขนขวา/แขนขวา", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม2/ต้นแขนขวา/แขนขวา/มือขวา", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม3", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม3/ต้นแขนซ้าย", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม3/ต้นแขนซ้าย/แขนซ้าย", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม3/ต้นแขนซ้าย/แขนซ้าย/มือซ้าย", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)]
+
+[node name="ต้นแขนขวา" type="Polygon2D" parent="." unique_id=1377725558]
+position = Vector2(-811, -372)
+color = Color(0.95703125, 0.95703125, 0.95703125, 1)
+texture = ExtResource("1_tua8l")
+skeleton = NodePath("../Skeleton2D")
+polygon = PackedVector2Array(1187.3347, 748.793, 1189.7396, 788.87494, 1188.938, 827.3536, 1181.7233, 860.2207, 1195.3511, 881.8649, 1209.7805, 881.0633, 1223.4084, 876.2535, 1228.2183, 857.01416, 1225.8134, 836.1716, 1227.4166, 812.9241, 1234.6313, 768.03235, 1229.0199, 739.97504, 1217.797, 727.95044, 1202.5658, 727.95044, 1192.1445, 736.7685)
+uv = PackedVector2Array(1187.3347, 748.793, 1189.7396, 788.87494, 1188.938, 827.3536, 1181.7233, 860.2207, 1195.3511, 881.8649, 1209.7805, 881.0633, 1223.4084, 876.2535, 1228.2183, 857.01416, 1225.8134, 836.1716, 1227.4166, 812.9241, 1234.6313, 768.03235, 1229.0199, 739.97504, 1217.797, 727.95044, 1202.5658, 727.95044, 1192.1445, 736.7685)
+bones = ["ตัว", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม1", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม1/หัว", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม1/หัว/หลุม", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม1/หัว/ผมซ้าย", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม1/หัว/ผมขวา", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม1/หัว/ผมกลาง", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม2", PackedFloat32Array(1, 1, 1, 1, 0.98, 0.98, 0.98, 0.98, 1, 1, 1, 1, 1, 1, 1), "ตัว/จุดเชื่อม2/ต้นแขนขวา", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม2/ต้นแขนขวา/แขนขวา", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม2/ต้นแขนขวา/แขนขวา/มือขวา", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม3", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม3/ต้นแขนซ้าย", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม3/ต้นแขนซ้าย/แขนซ้าย", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม3/ต้นแขนซ้าย/แขนซ้าย/มือซ้าย", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)]
+
+[node name="มือซ้าย" type="Polygon2D" parent="." unique_id=37025192]
+position = Vector2(-342, -367)
+scale = Vector2(0.84090906, 0.85294026)
+texture = ExtResource("1_tua8l")
+skeleton = NodePath("../Skeleton2D")
+polygon = PackedVector2Array(880.00006, 1088.0001, 872.00006, 1112.0001, 872.00006, 1136.0001, 880.00006, 1152.0001, 864.00006, 1168.0001, 872.00006, 1184.0001, 888.00006, 1192.0001, 904.00006, 1192.0001, 912.00006, 1192.0001, 920.00006, 1168.0001, 920.00006, 1152.0001, 912.00006, 1128.0001, 896.00006, 1112.0001, 904.00006, 1096.0001, 904.00006, 1088.0001, 896.00006, 1080.0001, 880.00006, 1080.0001)
+uv = PackedVector2Array(880.00006, 1088.0001, 872.00006, 1112.0001, 872.00006, 1136.0001, 880.00006, 1152.0001, 864.00006, 1168.0001, 872.00006, 1184.0001, 888.00006, 1192.0001, 904.00006, 1192.0001, 912.00006, 1192.0001, 920.00006, 1168.0001, 920.00006, 1152.0001, 912.00006, 1128.0001, 896.00006, 1112.0001, 904.00006, 1096.0001, 904.00006, 1088.0001, 896.00006, 1080.0001, 880.00006, 1080.0001)
+bones = ["ตัว", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม1", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม1/หัว", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม1/หัว/หลุม", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม1/หัว/ผมซ้าย", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม1/หัว/ผมขวา", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม1/หัว/ผมกลาง", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม2", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม2/ต้นแขนขวา", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม2/ต้นแขนขวา/แขนขวา", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม2/ต้นแขนขวา/แขนขวา/มือขวา", PackedFloat32Array(0.98, 0.98, 0.98, 0.98, 0.98, 0.98, 0.98, 0.98, 0.98, 0.98, 0.98, 0.98, 0.98, 0.98, 0.98, 0.98, 0.98), "ตัว/จุดเชื่อม3", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม3/ต้นแขนซ้าย", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม3/ต้นแขนซ้าย/แขนซ้าย", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม3/ต้นแขนซ้าย/แขนซ้าย/มือซ้าย", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)]
+
+[node name="แขนขวา" type="Polygon2D" parent="." unique_id=1935357491]
+position = Vector2(-811, -440)
+texture = ExtResource("1_tua8l")
+skeleton = NodePath("../Skeleton2D")
+polygon = PackedVector2Array(1193.2133, 923.53656, 1190.6299, 936.4536, 1193.2133, 959.7042, 1196.3132, 986.05493, 1197.3467, 1010.85565, 1197.3467, 1026.3561, 1207.6798, 1034.7534, 1215.9468, 1034.7534, 1226.797, 1028.5532, 1223.1803, 997.03564, 1226.2804, 962.418, 1226.2804, 936.0673, 1223.428, 921.5629, 1208.4236, 913.43555, 1199.6709, 914.0607)
+uv = PackedVector2Array(1193.2133, 923.53656, 1190.6299, 936.4536, 1193.2133, 959.7042, 1196.3132, 986.05493, 1197.3467, 1010.85565, 1197.3467, 1026.3561, 1207.6798, 1034.7534, 1215.9468, 1034.7534, 1226.797, 1028.5532, 1223.1803, 997.03564, 1226.2804, 962.418, 1226.2804, 936.0673, 1223.428, 921.5629, 1208.4236, 913.43555, 1199.6709, 914.0607)
+bones = ["ตัว", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม1", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม1/หัว", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม1/หัว/หลุม", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม1/หัว/ผมซ้าย", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม1/หัว/ผมขวา", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม1/หัว/ผมกลาง", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม2", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม2/ต้นแขนขวา", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม2/ต้นแขนขวา/แขนขวา", PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1), "ตัว/จุดเชื่อม2/ต้นแขนขวา/แขนขวา/มือขวา", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม3", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม3/ต้นแขนซ้าย", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม3/ต้นแขนซ้าย/แขนซ้าย", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม3/ต้นแขนซ้าย/แขนซ้าย/มือซ้าย", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)]
+
+[node name="ตัว" type="Polygon2D" parent="." unique_id=417466596]
+position = Vector2(-741, -273)
+color = Color(0.98046875, 0.98046875, 0.98046875, 1)
+texture = ExtResource("1_tua8l")
+skeleton = NodePath("../Skeleton2D")
+polygon = PackedVector2Array(985.3308, 677.9143, 989.44446, 702.2224, 994.30615, 725.7825, 997.298, 737.3016, 998.7939, 747.39874, 997.298, 750.3905, 1001.78564, 759.73975, 1003.6555, 777.6903, 1005.5253, 788.53546, 1006.5699, 813.5956, 1004.7, 825.18866, 1000.58636, 840.5215, 997.5946, 856.2282, 997.2206, 862.95966, 1005.8219, 873.4308, 1019.6588, 892.5033, 1027.1382, 899.23474, 1035.7395, 910.8278, 1043.9668, 921.6729, 1047.3326, 923.91675, 1051.8203, 923.91675, 1058.5518, 922.0469, 1066.779, 925.4126, 1069.3969, 922.4209, 1073.1365, 899.6087, 1074.2584, 885.77185, 1080.616, 872.68286, 1083.2336, 859.22, 1088.0953, 876.0486, 1092.583, 887.2677, 1101.5582, 902.2265, 1109.4116, 911.9497, 1112.4033, 914.19354, 1113.8993, 908.21, 1116.1431, 900.7306, 1121.7527, 896.9909, 1134.4675, 883.902, 1142.3209, 872.3089, 1139.7031, 867.44727, 1131.1018, 839.0256, 1126.9882, 831.1722, 1120.6307, 798.63684, 1116.891, 778.8164, 1118.013, 766.84937, 1134.0936, 719.54236, 1137.4594, 699.348, 1133.3457, 669.05646, 1143.8169, 667.56055, 1150.1743, 660.8291, 1152.7921, 648.4881, 1153.166, 635.77313, 1148.6785, 627.1718, 1143.4429, 622.3102, 1133.7197, 618.19653, 1125.1184, 618.19653, 1114.6472, 619.3185, 1107.1677, 621.1883, 1097.0706, 619.69244, 1087.7213, 615.9527, 1081.3639, 606.60345, 1078.3721, 596.88025, 1074.2584, 592.39264, 1072.7626, 596.1323, 1072.0146, 611.4651, 1064.1613, 609.5952, 1055.9338, 614.0829, 1049.9504, 621.56226, 1049.2024, 625.302, 1044.3408, 616.32666, 1038.7313, 595.75836, 1036.8615, 589.77484, 1033.1217, 587.70123, 1031.252, 593.3108, 1026.3903, 604.1559, 1022.6506, 615.74896, 1021.90265, 619.48865, 1009.9356, 624.3503, 1000.2124, 628.08997, 990.11523, 625.47217, 974.7824, 627.716, 965.0592, 631.82965, 956.8319, 639.68304, 953.8401, 649.0323, 953.8401, 663.9911, 959.0757, 675.2102, 968.4249, 680.4458, 978.5221, 680.0718, 981.8879, 680.4458)
+uv = PackedVector2Array(985.3308, 677.9143, 989.44446, 702.2224, 994.30615, 725.7825, 997.298, 737.3016, 998.7939, 747.39874, 997.298, 750.3905, 1001.78564, 759.73975, 1003.6555, 777.6903, 1005.5253, 788.53546, 1006.5699, 813.5956, 1004.7, 825.18866, 1000.58636, 840.5215, 997.5946, 856.2282, 997.2206, 862.95966, 1005.8219, 873.4308, 1019.6588, 892.5033, 1027.1382, 899.23474, 1035.7395, 910.8278, 1043.9668, 921.6729, 1047.3326, 923.91675, 1051.8203, 923.91675, 1058.5518, 922.0469, 1066.779, 925.4126, 1069.3969, 922.4209, 1073.1365, 899.6087, 1074.2584, 885.77185, 1080.616, 872.68286, 1083.2336, 859.22, 1088.0953, 876.0486, 1092.583, 887.2677, 1101.5582, 902.2265, 1109.4116, 911.9497, 1112.4033, 914.19354, 1113.8993, 908.21, 1116.1431, 900.7306, 1121.7527, 896.9909, 1134.4675, 883.902, 1142.3209, 872.3089, 1139.7031, 867.44727, 1131.1018, 839.0256, 1126.9882, 831.1722, 1120.6307, 798.63684, 1116.891, 778.8164, 1118.013, 766.84937, 1134.0936, 719.54236, 1137.4594, 699.348, 1133.3457, 669.05646, 1143.8169, 667.56055, 1150.1743, 660.8291, 1152.7921, 648.4881, 1153.166, 635.77313, 1148.6785, 627.1718, 1143.4429, 622.3102, 1133.7197, 618.19653, 1125.1184, 618.19653, 1114.6472, 619.3185, 1107.1677, 621.1883, 1097.0706, 619.69244, 1087.7213, 615.9527, 1081.3639, 606.60345, 1078.3721, 596.88025, 1074.2584, 592.39264, 1072.7626, 596.1323, 1072.0146, 611.4651, 1064.1613, 609.5952, 1055.9338, 614.0829, 1049.9504, 621.56226, 1049.2024, 625.302, 1044.3408, 616.32666, 1038.7313, 595.75836, 1036.8615, 589.77484, 1033.1217, 587.70123, 1031.252, 593.3108, 1026.3903, 604.1559, 1022.6506, 615.74896, 1021.90265, 619.48865, 1009.9356, 624.3503, 1000.2124, 628.08997, 990.11523, 625.47217, 974.7824, 627.716, 965.0592, 631.82965, 956.8319, 639.68304, 953.8401, 649.0323, 953.8401, 663.9911, 959.0757, 675.2102, 968.4249, 680.4458, 978.5221, 680.0718, 981.8879, 680.4458)
+bones = ["ตัว", PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1), "ตัว/จุดเชื่อม1", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม1/หัว", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม1/หัว/หลุม", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม1/หัว/ผมซ้าย", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม1/หัว/ผมขวา", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม1/หัว/ผมกลาง", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม2", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม2/ต้นแขนขวา", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม2/ต้นแขนขวา/แขนขวา", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม2/ต้นแขนขวา/แขนขวา/มือขวา", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม3", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม3/ต้นแขนซ้าย", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม3/ต้นแขนซ้าย/แขนซ้าย", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม3/ต้นแขนซ้าย/แขนซ้าย/มือซ้าย", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)]
+
+[node name="หลุม" type="Polygon2D" parent="." unique_id=387762550]
+position = Vector2(-496, -162)
+texture = ExtResource("1_tua8l")
+skeleton = NodePath("../Skeleton2D")
+polygon = PackedVector2Array(808, 392, 784, 416, 792, 456, 808, 488, 848.00006, 496, 888, 488, 896, 472, 912, 432, 888, 400, 848.00006, 384)
+uv = PackedVector2Array(808, 392, 784, 416, 792, 456, 808, 488, 848.00006, 496, 888, 488, 896, 472, 912, 432, 888, 400, 848.00006, 384)
+bones = ["ตัว", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม1", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม1/หัว", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม1/หัว/หลุม", PackedFloat32Array(0.98, 0.98, 0.98, 0.98, 0.98, 0.98, 0.98, 0.98, 0.98, 0.98), "ตัว/จุดเชื่อม1/หัว/ผมซ้าย", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม1/หัว/ผมขวา", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม1/หัว/ผมกลาง", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม2", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม2/ต้นแขนขวา", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม2/ต้นแขนขวา/แขนขวา", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม2/ต้นแขนขวา/แขนขวา/มือขวา", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม3", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม3/ต้นแขนซ้าย", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม3/ต้นแขนซ้าย/แขนซ้าย", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม3/ต้นแขนซ้าย/แขนซ้าย/มือซ้าย", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0)]
+
+[node name="ผมซ้าย" type="Polygon2D" parent="." unique_id=1055852568]
+position = Vector2(-473, -373)
+texture = ExtResource("1_tua8l")
+skeleton = NodePath("../Skeleton2D")
+polygon = PackedVector2Array(784.00006, 600, 776.00006, 632, 792, 640, 808.00006, 624, 816, 600)
+uv = PackedVector2Array(784.00006, 600, 776.00006, 632, 792, 640, 808.00006, 624, 816, 600)
+bones = ["ตัว", PackedFloat32Array(0, 0, 0, 0, 0), "ตัว/จุดเชื่อม1", PackedFloat32Array(0, 0, 0, 0, 0), "ตัว/จุดเชื่อม1/หัว", PackedFloat32Array(0, 0, 0, 0, 0), "ตัว/จุดเชื่อม1/หัว/หลุม", PackedFloat32Array(0, 0, 0, 0, 0), "ตัว/จุดเชื่อม1/หัว/ผมซ้าย", PackedFloat32Array(0.98, 0.98, 0.98, 0.98, 0.98), "ตัว/จุดเชื่อม1/หัว/ผมขวา", PackedFloat32Array(0, 0, 0, 0, 0), "ตัว/จุดเชื่อม1/หัว/ผมกลาง", PackedFloat32Array(0, 0, 0, 0, 0), "ตัว/จุดเชื่อม2", PackedFloat32Array(0, 0, 0, 0, 0), "ตัว/จุดเชื่อม2/ต้นแขนขวา", PackedFloat32Array(0, 0, 0, 0, 0), "ตัว/จุดเชื่อม2/ต้นแขนขวา/แขนขวา", PackedFloat32Array(0, 0, 0, 0, 0), "ตัว/จุดเชื่อม2/ต้นแขนขวา/แขนขวา/มือขวา", PackedFloat32Array(0, 0, 0, 0, 0), "ตัว/จุดเชื่อม3", PackedFloat32Array(0, 0, 0, 0, 0), "ตัว/จุดเชื่อม3/ต้นแขนซ้าย", PackedFloat32Array(0, 0, 0, 0, 0), "ตัว/จุดเชื่อม3/ต้นแขนซ้าย/แขนซ้าย", PackedFloat32Array(0, 0, 0, 0, 0), "ตัว/จุดเชื่อม3/ต้นแขนซ้าย/แขนซ้าย/มือซ้าย", PackedFloat32Array(0, 0, 0, 0, 0)]
+
+[node name="ผมขวา" type="Polygon2D" parent="." unique_id=981851394]
+position = Vector2(-544, -371)
+texture = ExtResource("1_tua8l")
+skeleton = NodePath("../Skeleton2D")
+polygon = PackedVector2Array(896, 591.99994, 888, 599.99994, 888, 607.99994, 880, 623.99994, 880, 631.99994, 888, 639.99994, 904, 648, 912, 639.99994, 920, 639.99994, 928, 631.99994, 928, 623.99994, 920, 607.99994, 912, 591.99994)
+uv = PackedVector2Array(896, 591.99994, 888, 599.99994, 888, 607.99994, 880, 623.99994, 880, 631.99994, 888, 639.99994, 904, 648, 912, 639.99994, 920, 639.99994, 928, 631.99994, 928, 623.99994, 920, 607.99994, 912, 591.99994)
+bones = ["ตัว", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม1", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม1/หัว", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม1/หัว/หลุม", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม1/หัว/ผมซ้าย", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม1/หัว/ผมขวา", PackedFloat32Array(0.98, 0.98, 0.98, 0.98, 0.98, 0.98, 0.98, 0.98, 0.98, 0.98, 0.98, 0.98, 0.98), "ตัว/จุดเชื่อม1/หัว/ผมกลาง", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม2", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม2/ต้นแขนขวา", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม2/ต้นแขนขวา/แขนขวา", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม2/ต้นแขนขวา/แขนขวา/มือขวา", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม3", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม3/ต้นแขนซ้าย", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม3/ต้นแขนซ้าย/แขนซ้าย", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม3/ต้นแขนซ้าย/แขนซ้าย/มือซ้าย", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)]
+
+[node name="ผมกลาง" type="Polygon2D" parent="." unique_id=189788059]
+position = Vector2(-508, -369)
+texture = ExtResource("1_tua8l")
+skeleton = NodePath("../Skeleton2D")
+polygon = PackedVector2Array(832, 591.99994, 824.8963, 613.3109, 816, 639.99994, 848, 639.99994, 863.6467, 613.922, 872, 599.99994, 856, 583.99994)
+uv = PackedVector2Array(832, 591.99994, 816, 639.99994, 848, 639.99994, 872, 599.99994, 856, 583.99994)
+bones = ["ตัว", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม1", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม1/หัว", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม1/หัว/หลุม", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม1/หัว/ผมซ้าย", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม1/หัว/ผมขวา", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม1/หัว/ผมกลาง", PackedFloat32Array(1, 1, 1, 1, 1, 1, 1), "ตัว/จุดเชื่อม2", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม2/ต้นแขนขวา", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม2/ต้นแขนขวา/แขนขวา", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม2/ต้นแขนขวา/แขนขวา/มือขวา", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม3", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม3/ต้นแขนซ้าย", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม3/ต้นแขนซ้าย/แขนซ้าย", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม3/ต้นแขนซ้าย/แขนซ้าย/มือซ้าย", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0)]
+
+[node name="ต้นแขนซ้าย" type="Polygon2D" parent="." unique_id=1580654454]
+position = Vector2(-658, -361)
+texture = ExtResource("1_tua8l")
+skeleton = NodePath("../Skeleton2D")
+polygon = PackedVector2Array(864, 728.00006, 864, 880.00006, 888, 896.00006, 912, 888.00006, 920.00006, 736.00006, 896, 712.00006)
+uv = PackedVector2Array(864, 728.00006, 864, 880.00006, 888, 896.00006, 912, 888.00006, 920.00006, 736.00006, 896, 712.00006)
+bones = ["ตัว", PackedFloat32Array(0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม1", PackedFloat32Array(0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม1/หัว", PackedFloat32Array(0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม1/หัว/หลุม", PackedFloat32Array(0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม1/หัว/ผมซ้าย", PackedFloat32Array(0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม1/หัว/ผมขวา", PackedFloat32Array(0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม1/หัว/ผมกลาง", PackedFloat32Array(0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม2", PackedFloat32Array(0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม2/ต้นแขนขวา", PackedFloat32Array(0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม2/ต้นแขนขวา/แขนขวา", PackedFloat32Array(0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม2/ต้นแขนขวา/แขนขวา/มือขวา", PackedFloat32Array(0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม3", PackedFloat32Array(0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม3/ต้นแขนซ้าย", PackedFloat32Array(0.98, 0.98, 0.98, 0.98, 0.98, 0.98), "ตัว/จุดเชื่อม3/ต้นแขนซ้าย/แขนซ้าย", PackedFloat32Array(0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม3/ต้นแขนซ้าย/แขนซ้าย/มือซ้าย", PackedFloat32Array(0, 0, 0, 0, 0, 0)]
+
+[node name="มือขวา" type="Polygon2D" parent="." unique_id=456145667]
+position = Vector2(-981, -510)
+texture = ExtResource("1_tua8l")
+skeleton = NodePath("../Skeleton2D")
+polygon = PackedVector2Array(1192, 1088, 1184, 1168, 1215.9999, 1184, 1248, 1176, 1256, 1120, 1240, 1096, 1231.9999, 1064)
+uv = PackedVector2Array(1192, 1088, 1184, 1168, 1215.9999, 1184, 1248, 1176, 1256, 1120, 1240, 1096, 1231.9999, 1064)
+bones = ["ตัว", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม1", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม1/หัว", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม1/หัว/หลุม", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม1/หัว/ผมซ้าย", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม1/หัว/ผมขวา", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม1/หัว/ผมกลาง", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม2", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม2/ต้นแขนขวา", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม2/ต้นแขนขวา/แขนขวา", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม2/ต้นแขนขวา/แขนขวา/มือขวา", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม3", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม3/ต้นแขนซ้าย", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม3/ต้นแขนซ้าย/แขนซ้าย", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0), "ตัว/จุดเชื่อม3/ต้นแขนซ้าย/แขนซ้าย/มือซ้าย", PackedFloat32Array(0.98, 0.98, 0.98, 0.98, 0.98, 0.98, 0.98)]
+
+[node name="แขนซ้าย" type="Polygon2D" parent="." unique_id=1027057110]
+position = Vector2(-657, -431)
+texture = ExtResource("1_tua8l")
+skeleton = NodePath("../Skeleton2D")
+polygon = PackedVector2Array(856.00006, 912.00006, 856.00006, 1048.0001, 912.00006, 1056.0001, 920, 912.00006)
+uv = PackedVector2Array(856.00006, 912.00006, 856.00006, 1048.0001, 912.00006, 1056.0001, 920, 912.00006)
+bones = ["ตัว", PackedFloat32Array(0, 0, 0, 0), "ตัว/จุดเชื่อม1", PackedFloat32Array(0, 0, 0, 0), "ตัว/จุดเชื่อม1/หัว", PackedFloat32Array(0, 0, 0, 0), "ตัว/จุดเชื่อม1/หัว/หลุม", PackedFloat32Array(0, 0, 0, 0), "ตัว/จุดเชื่อม1/หัว/ผมซ้าย", PackedFloat32Array(0, 0, 0, 0), "ตัว/จุดเชื่อม1/หัว/ผมขวา", PackedFloat32Array(0, 0, 0, 0), "ตัว/จุดเชื่อม1/หัว/ผมกลาง", PackedFloat32Array(0, 0, 0, 0), "ตัว/จุดเชื่อม2", PackedFloat32Array(0, 0, 0, 0), "ตัว/จุดเชื่อม2/ต้นแขนขวา", PackedFloat32Array(0, 0, 0, 0), "ตัว/จุดเชื่อม2/ต้นแขนขวา/แขนขวา", PackedFloat32Array(0, 0, 0, 0), "ตัว/จุดเชื่อม2/ต้นแขนขวา/แขนขวา/มือขวา", PackedFloat32Array(0, 0, 0, 0), "ตัว/จุดเชื่อม3", PackedFloat32Array(0, 0, 0, 0), "ตัว/จุดเชื่อม3/ต้นแขนซ้าย", PackedFloat32Array(0, 0, 0, 0), "ตัว/จุดเชื่อม3/ต้นแขนซ้าย/แขนซ้าย", PackedFloat32Array(0.98, 0.98, 0.98, 0.98), "ตัว/จุดเชื่อม3/ต้นแขนซ้าย/แขนซ้าย/มือซ้าย", PackedFloat32Array(0, 0, 0, 0)]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=2027606941]
+libraries/ = SubResource("AnimationLibrary_n3re3")

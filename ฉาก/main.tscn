@@ -1,0 +1,159 @@
+[gd_scene format=3 uid="uid://di64qx31q5x2l"]
+
+[ext_resource type="Script" uid="uid://8vpb2v8kl2qk" path="res://ฉาก/main.gd" id="1_3yu1n"]
+[ext_resource type="Texture2D" uid="uid://c62xbmlysi7sy" path="res://ฉาก/ห้อง(ฉากเกม)/เก็บภาพ/20260806_211026.png" id="2_3m5o2"]
+[ext_resource type="FontFile" uid="uid://tthinwtxa75q" path="res://ภาพ/อักศร/Ashes, Ashes Medium_9606.ttf" id="2_3yu1n"]
+[ext_resource type="Shader" uid="uid://dxem7g1qllkgb" path="res://ฉาก/main.gdshader" id="3_dn54y"]
+[ext_resource type="AudioStream" uid="uid://ca871be5dt618" path="res://ภาพ/เสียง/free horror game soundtrack asset.mp3" id="6_1xdru"]
+[ext_resource type="Texture2D" uid="uid://bk8v8pyqwsnqn" path="res://ภาพ/halloween-creepy-eyes-animated-custom-cursor-removebg-preview.png" id="6_84k0b"]
+[ext_resource type="PackedScene" uid="uid://druktgarfyqs8" path="res://ทดสอบ/เปลี่ยนฉาก/area_2d.tscn" id="7_84k0b"]
+[ext_resource type="FontFile" uid="uid://wew2dtdrkcxd" path="res://ภาพ/อักศร/Castlefavor-E4Eme.otf" id="8_45ofa"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_2c0yg"]
+shader = ExtResource("3_dn54y")
+shader_parameter/noise_opacity = 0.1
+shader_parameter/color_sparkle_amount = 0.05
+shader_parameter/wave_speed = 2.0
+
+[sub_resource type="LabelSettings" id="LabelSettings_3hfb7"]
+font = ExtResource("2_3yu1n")
+font_size = 60
+font_color = Color(0.328125, 0, 0, 1)
+shadow_size = 0
+shadow_color = Color(0.38671875, 0, 0, 0.659)
+shadow_offset = Vector2(3, 3)
+stacked_outline_count = 1
+stacked_outline_0/size = 4
+
+[sub_resource type="LabelSettings" id="LabelSettings_2c0yg"]
+font = ExtResource("8_45ofa")
+font_size = 140
+font_color = Color(0.14901961, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_f3bvx"]
+font = ExtResource("8_45ofa")
+font_size = 140
+font_color = Color(0.33333334, 0, 0, 1)
+
+[node name="Main" type="Node2D" unique_id=1251077080]
+script = ExtResource("1_3yu1n")
+
+[node name="20260806211026" type="Sprite2D" parent="." unique_id=1890163114]
+position = Vector2(575.99994, 324.00003)
+scale = Vector2(0.24913494, 0.18685122)
+texture = ExtResource("2_3m5o2")
+
+[node name="HalloweenCreepyEyesAnimatedCustomCursorRemovebgPreview" type="Sprite2D" parent="." unique_id=846835570]
+modulate = Color(1, 1, 1, 0.10980392)
+position = Vector2(180, 320)
+texture = ExtResource("6_84k0b")
+
+[node name="HalloweenCreepyEyesAnimatedCustomCursorRemovebgPreview2" type="Sprite2D" parent="." unique_id=1904099868]
+modulate = Color(1, 1, 1, 0.10980392)
+position = Vector2(949, 650.00006)
+rotation = -3.455752
+texture = ExtResource("6_84k0b")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=794616437]
+offset_right = 95.0
+offset_bottom = 648.0
+mouse_filter = 2
+color = Color(0, 0, 0, 0.54509807)
+
+[node name="ColorRect2" type="ColorRect" parent="." unique_id=1817160724]
+offset_left = 1057.0
+offset_top = -1.0
+offset_right = 1152.0
+offset_bottom = 647.0
+mouse_filter = 2
+color = Color(0, 0, 0, 0.54509807)
+
+[node name="ColorRect3" type="ColorRect" parent="." unique_id=1331463043]
+offset_left = -45.0
+offset_top = 1.0
+offset_right = 50.0
+offset_bottom = 649.0
+mouse_filter = 2
+color = Color(0, 0, 0, 0.54509807)
+
+[node name="ColorRect4" type="ColorRect" parent="." unique_id=1032452890]
+offset_left = 1100.0
+offset_top = 2.0
+offset_right = 1195.0
+offset_bottom = 650.0
+mouse_filter = 2
+color = Color(0, 0, 0, 0.54509807)
+
+[node name="ColorRect5" type="ColorRect" parent="." unique_id=1594131711]
+offset_left = 1100.0
+offset_top = 2.0
+offset_right = 1195.0
+offset_bottom = 650.0
+mouse_filter = 2
+color = Color(0, 0, 0, 0.54509807)
+
+[node name="TvFilter" type="ColorRect" parent="." unique_id=659562870]
+material = SubResource("ShaderMaterial_2c0yg")
+offset_left = -81.0
+offset_top = -36.0
+offset_right = 1238.0
+offset_bottom = 691.0
+mouse_filter = 2
+
+[node name="TextureButton" type="TextureButton" parent="." unique_id=1058776385]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 417.0
+offset_top = 286.5
+offset_right = 735.0
+offset_bottom = 361.5
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+
+[node name="Label" type="Label" parent="TextureButton" unique_id=1592816506]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -54.0
+offset_top = -32.5
+offset_right = 54.0
+offset_bottom = 32.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Play"
+label_settings = SubResource("LabelSettings_3hfb7")
+
+[node name="เพลง" type="AudioStreamPlayer" parent="." unique_id=669578870]
+stream = ExtResource("6_1xdru")
+volume_db = -10.0
+autoplay = true
+
+[node name="Area2D" parent="." unique_id=1155147205 instance=ExtResource("7_84k0b")]
+position = Vector2(4, 3)
+
+[node name="Label2" type="Label" parent="." unique_id=837570483]
+offset_left = 254.0
+offset_top = 48.0
+offset_right = 915.0
+offset_bottom = 167.0
+text = "Shadow of karma"
+label_settings = SubResource("LabelSettings_2c0yg")
+
+[node name="Label" type="Label" parent="." unique_id=1079357600]
+offset_left = 247.0
+offset_top = 44.0
+offset_right = 908.0
+offset_bottom = 163.0
+text = "Shadow of karma"
+label_settings = SubResource("LabelSettings_f3bvx")
+
+[connection signal="mouse_entered" from="TextureButton" to="." method="_on_texture_button_mouse_entered"]
+[connection signal="mouse_exited" from="TextureButton" to="." method="_on_texture_button_mouse_exited"]
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]

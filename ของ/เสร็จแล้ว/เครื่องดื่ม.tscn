@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://dqbrmus88dhrp"]
+
+[ext_resource type="Script" uid="uid://d4hebo10aj3qi" path="res://ของ/เสร็จแล้ว/เครื่องดื่ม.gd" id="1_ktnd0"]
+[ext_resource type="Texture2D" uid="uid://c11ieumse16jm" path="res://ของ/ภาพของ/EnergyDrink-removebg-preview.png" id="2_i1twv"]
+[ext_resource type="Texture2D" uid="uid://dfudess4itg0b" path="res://ภาพ/fate-grand-order-femboy-sailor-uniform-red-skirt-cat-boy-hd-wallpaper-preview.jpg" id="3_6h8bu"]
+[ext_resource type="AudioStream" uid="uid://cfbw007kh5wyx" path="res://ภาพ/เสียง/จั้ม/femboy-twinkie-balls.mp3" id="4_6qv7j"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f3bvx"]
+size = Vector2(186, 434)
+
+[node name="เครื่องดื่ม" type="Area2D" unique_id=25092998]
+script = ExtResource("1_ktnd0")
+
+[node name="EnergyDrinkRemovebgPreview" type="Sprite2D" parent="." unique_id=1709151225]
+texture = ExtResource("2_i1twv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1592210299]
+position = Vector2(1, -28)
+shape = SubResource("RectangleShape2D_f3bvx")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=27741564]
+scale = Vector2(20, 20)
+transform = Transform2D(20, 0, 0, 20, 0, 0)
+
+[node name="Femboy" type="Sprite2D" parent="CanvasLayer" unique_id=512101934]
+visible = false
+position = Vector2(28.800001, 16.175)
+scale = Vector2(0.07912088, 0.058079)
+texture = ExtResource("3_6h8bu")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=906839721]
+stream = ExtResource("4_6qv7j")
+volume_db = -10.0

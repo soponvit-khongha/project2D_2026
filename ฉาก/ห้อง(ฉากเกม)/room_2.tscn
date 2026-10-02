@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://dxf8wq2u2d0gg"]
+
+[ext_resource type="Script" uid="uid://cxlbcq763njg" path="res://ฉาก/ห้อง(ฉากเกม)/room_2.gd" id="1_mv535"]
+[ext_resource type="Texture2D" uid="uid://ch401ti4s8a7l" path="res://ฉาก/ห้อง(ฉากเกม)/เก็บภาพ/20260806_211014 (1).png" id="1_u2iba"]
+[ext_resource type="PackedScene" uid="uid://bgb2j6r5ed7yq" path="res://ตัวระคร/หน้าต่างข้อความตัวละคร/text_box.tscn" id="2_dymjg"]
+[ext_resource type="PackedScene" uid="uid://cgqdne3vkomla" path="res://ทดสอบ/เปลี่ยนฉาก/ขึึ้นลง.tscn" id="3_dj033"]
+[ext_resource type="PackedScene" uid="uid://druktgarfyqs8" path="res://ทดสอบ/เปลี่ยนฉาก/area_2d.tscn" id="3_v5kfa"]
+[ext_resource type="PackedScene" uid="uid://qsq8magv6w2c" path="res://ตัวระคร/ตัวระคร.tscn" id="4_ffj40"]
+[ext_resource type="PackedScene" uid="uid://b5pyv2hy2n0ut" path="res://ทดสอบ/เปลี่ยนฉาก/ขวา.tscn" id="5_jh4c4"]
+[ext_resource type="PackedScene" uid="uid://bsdsd8faolumi" path="res://ของ/เสร็จแล้ว/กระดาษเช็ดตูด.tscn" id="8_6cgbl"]
+
+[node name="room2" type="Node2D" unique_id=653817500]
+script = ExtResource("1_mv535")
+
+[node name="ฉาก" type="TextureRect" parent="." unique_id=1222399369]
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("1_u2iba")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="TextBox" parent="." unique_id=1732555962 node_paths=PackedStringArray("character_node") instance=ExtResource("2_dymjg")]
+character_node = NodePath("../ตัวระคร")
+
+[node name="ตัวระคร" parent="." unique_id=828537330 instance=ExtResource("4_ffj40")]
+position = Vector2(-25, 52)
+
+[node name="Area2D" parent="." unique_id=1155147205 instance=ExtResource("3_v5kfa")]
+
+[node name="ขวา" parent="." unique_id=1739670107 instance=ExtResource("5_jh4c4")]
+target_scene = "uid://c6lk0rmanc0q8"
+
+[node name="ขึึ้นลง" parent="." unique_id=1860550226 instance=ExtResource("3_dj033")]
+target_scene = "uid://ce6g23kf3xm85"
+
+[node name="กระดาษเช็ดตูด" parent="." unique_id=680658460 instance=ExtResource("8_6cgbl")]
+position = Vector2(617, 285.00006)
+rotation = 0.626727
+scale = Vector2(0.5458883, 0.6521519)

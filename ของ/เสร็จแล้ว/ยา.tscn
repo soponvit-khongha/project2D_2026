@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://bou51ov84ur5p"]
+
+[ext_resource type="Script" uid="uid://dm5plal7t5arx" path="res://ของ/เสร็จแล้ว/ยา.gd" id="1_ck7pa"]
+[ext_resource type="Texture2D" uid="uid://cvlbuwgt3ahss" path="res://ของ/ภาพของ/Medicine-removebg-preview.png" id="2_kdh2y"]
+[ext_resource type="Texture2D" uid="uid://c6fxjui1rsv33" path="res://ทดสอบ/เปลี่ยนฉาก/เมาส์/icons8-circle-32.png" id="2_wujyx"]
+[ext_resource type="Texture2D" uid="uid://dyau51r6e7o73" path="res://ภาพ/entity_666__backrooms_wiki_archive__by_randyharry2009_dg6c9ea-fullview.jpg" id="4_wujyx"]
+[ext_resource type="AudioStream" uid="uid://begol1g3betw5" path="res://ภาพ/เสียง/จั้ม/freesound_community-jumpscare_sound-39630.mp3" id="5_2aldo"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_2c0yg"]
+radius = 57.0
+height = 211.24985
+
+[node name="ยา" type="Area2D" unique_id=16529597]
+script = ExtResource("1_ck7pa")
+custom_cursor_texture = ExtResource("2_wujyx")
+
+[node name="MedicineRemovebgPreview" type="Sprite2D" parent="." unique_id=1762896237]
+texture = ExtResource("2_kdh2y")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=91196883]
+rotation = -0.93375117
+shape = SubResource("CapsuleShape2D_2c0yg")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1517624767]
+scale = Vector2(20, 20)
+transform = Transform2D(20, 0, 0, 20, 0, 0)
+
+[node name="GhostSprite" type="Sprite2D" parent="CanvasLayer" unique_id=150239796]
+visible = false
+modulate = Color(1, 0.39453125, 0.39453125, 1)
+position = Vector2(28.79654, 16.199999)
+scale = Vector2(0.07711769, 0.049390253)
+texture = ExtResource("4_wujyx")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1035193762]
+stream = ExtResource("5_2aldo")
+volume_db = -10.0

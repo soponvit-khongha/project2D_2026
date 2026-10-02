@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://bgq3i5s4kpelu"]
+
+[ext_resource type="Texture2D" uid="uid://bcbg71e85f8n1" path="res://ฉาก/ห้อง(ฉากเกม)/เก็บภาพ/20260806_210618.png" id="1_dpvja"]
+[ext_resource type="Script" uid="uid://d0rtr4ycjxfon" path="res://ฉาก/ห้อง(ฉากเกม)/room_9.gd" id="1_m8b83"]
+[ext_resource type="PackedScene" uid="uid://bgb2j6r5ed7yq" path="res://ตัวระคร/หน้าต่างข้อความตัวละคร/text_box.tscn" id="2_g4lld"]
+[ext_resource type="PackedScene" uid="uid://druktgarfyqs8" path="res://ทดสอบ/เปลี่ยนฉาก/area_2d.tscn" id="3_hsvro"]
+[ext_resource type="PackedScene" uid="uid://dyyknngasmhhu" path="res://ทดสอบ/เปลี่ยนฉาก/ลง.tscn" id="4_ubujk"]
+[ext_resource type="PackedScene" uid="uid://djq5y72nahjff" path="res://ทดสอบ/เปลี่ยนฉาก/ซ้าย.tscn" id="5_8s1c3"]
+[ext_resource type="PackedScene" uid="uid://cgqdne3vkomla" path="res://ทดสอบ/เปลี่ยนฉาก/ขึึ้นลง.tscn" id="6_0xubb"]
+[ext_resource type="Texture2D" uid="uid://bbw2qgqvqbten" path="res://ภาพ/OIP (6).webp" id="8_vdfu6"]
+[ext_resource type="AudioStream" uid="uid://begol1g3betw5" path="res://ภาพ/เสียง/จั้ม/freesound_community-jumpscare_sound-39630.mp3" id="9_jhmnc"]
+
+[node name="Room9" type="Node2D" unique_id=949270927]
+script = ExtResource("1_m8b83")
+
+[node name="ฉาก" type="TextureRect" parent="." unique_id=1270309467]
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("1_dpvja")
+expand_mode = 1
+stretch_mode = 6
+metadata/_edit_use_anchors_ = true
+
+[node name="TextBox" parent="." unique_id=1732555962 instance=ExtResource("2_g4lld")]
+
+[node name="Area2D" parent="." unique_id=1155147205 instance=ExtResource("3_hsvro")]
+position = Vector2(1, 1)
+
+[node name="ลง" parent="." unique_id=1434753056 instance=ExtResource("4_ubujk")]
+position = Vector2(1, 1)
+target_scene = "uid://f1h1jgkirf25"
+
+[node name="ซ้าย" parent="." unique_id=226147396 instance=ExtResource("5_8s1c3")]
+target_scene = "uid://durvbc4lp2ifp"
+
+[node name="ขึึ้นลง" parent="." unique_id=1860550226 instance=ExtResource("6_0xubb")]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1495038804]
+
+[node name="GhostSprite" type="Sprite2D" parent="CanvasLayer" unique_id=1724193583]
+visible = false
+modulate = Color(0.5078125, 0.0119018555, 0.0119018555, 1)
+position = Vector2(575.99994, 323.49997)
+scale = Vector2(2.4303796, 1.3943964)
+texture = ExtResource("8_vdfu6")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="CanvasLayer" unique_id=524050650]
+stream = ExtResource("9_jhmnc")

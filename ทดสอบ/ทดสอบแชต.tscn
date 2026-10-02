@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://ghgbocwvsboo"]
+
+[ext_resource type="Script" uid="uid://bx03me45qis81" path="res://ทดสอบ/ทดสอบแชต.gd" id="1_au43m"]
+[ext_resource type="PackedScene" uid="uid://bgb2j6r5ed7yq" path="res://ตัวระคร/หน้าต่างข้อความตัวละคร/text_box.tscn" id="2_hjaqe"]
+[ext_resource type="PackedScene" uid="uid://c2o3pcqtjkln3" path="res://ทดสอบ/ออฟเจคทดสอบ.tscn" id="3_spxrr"]
+[ext_resource type="PackedScene" uid="uid://qsq8magv6w2c" path="res://ตัวระคร/ตัวระคร.tscn" id="4_7uy1d"]
+[ext_resource type="PackedScene" uid="uid://druktgarfyqs8" path="res://ทดสอบ/เปลี่ยนฉาก/area_2d.tscn" id="5_xc6wj"]
+
+[node name="ทดสอบแชต" type="Node2D" unique_id=1963358117 node_paths=PackedStringArray("text_box")]
+script = ExtResource("1_au43m")
+text_box = NodePath("TextBox")
+
+[node name="Area2D" parent="." unique_id=1155147205 instance=ExtResource("5_xc6wj")]
+position = Vector2(0, 2)
+
+[node name="TextBox" parent="." unique_id=1732555962 node_paths=PackedStringArray("character_node") instance=ExtResource("2_hjaqe")]
+character_node = NodePath("../ตัวระคร")
+
+[node name="ออฟเจคทดสอบ" parent="." unique_id=1380095024 instance=ExtResource("3_spxrr")]
+position = Vector2(806, 315)
+
+[node name="ตัวระคร" parent="." unique_id=828537330 instance=ExtResource("4_7uy1d")]
+position = Vector2(-61, 54)

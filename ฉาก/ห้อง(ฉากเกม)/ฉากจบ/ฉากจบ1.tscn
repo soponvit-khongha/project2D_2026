@@ -1,0 +1,88 @@
+[gd_scene format=3 uid="uid://h23r3jjngwcr"]
+
+[ext_resource type="Texture2D" uid="uid://cq7iuwp3a42j2" path="res://ฉาก/ห้อง(ฉากเกม)/เก็บภาพ/1360897339.jpg" id="1_21x0k"]
+[ext_resource type="Script" uid="uid://vxoxhddh7emq" path="res://ฉาก/ห้อง(ฉากเกม)/ฉากจบ/ฉากจบ1.gd" id="1_wwvni"]
+[ext_resource type="Texture2D" uid="uid://b6fq8rvba0250" path="res://ของ/ภาพของ/1360897339-removebg-preview.png" id="2_q253m"]
+[ext_resource type="FontFile" uid="uid://tthinwtxa75q" path="res://ภาพ/อักศร/Ashes, Ashes Medium_9606.ttf" id="3_bcokf"]
+[ext_resource type="FontFile" uid="uid://dtfedtjbg5q8m" path="res://ภาพ/อักศร/ms-sans-serif-1.otf" id="4_xxly8"]
+[ext_resource type="PackedScene" uid="uid://druktgarfyqs8" path="res://ทดสอบ/เปลี่ยนฉาก/area_2d.tscn" id="6_bcokf"]
+[ext_resource type="AudioStream" uid="uid://bo6aafhhhqo5e" path="res://ภาพ/เสียง/freesound_community-funk-guitar-pro-toolsl-75957.mp3" id="6_xxly8"]
+
+[sub_resource type="GDScript" id="GDScript_wwvni"]
+script/source = "extends AudioStreamPlayer
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+"
+
+[node name="ฉากจบ1" type="Node2D" unique_id=1627551669]
+script = ExtResource("1_wwvni")
+
+[node name="1360897339" type="Sprite2D" parent="." unique_id=1563060803]
+modulate = Color(0.765625, 0, 0, 1)
+position = Vector2(576.5, 323.50003)
+scale = Vector2(1.1259766, 0.8528252)
+texture = ExtResource("1_21x0k")
+
+[node name="1360897339RemovebgPreview" type="Sprite2D" parent="." unique_id=1380675464]
+modulate = Color(0.65234375, 0.5758972, 0.5758972, 1)
+position = Vector2(578, 337)
+scale = Vector2(1.9641622, 1.4762181)
+texture = ExtResource("2_q253m")
+
+[node name="TextureButton" type="TextureButton" parent="." unique_id=79943860]
+offset_left = 409.0
+offset_top = 484.0
+offset_right = 718.0
+offset_bottom = 584.0
+mouse_filter = 1
+
+[node name="Label" type="Label" parent="TextureButton" unique_id=1707514505]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_bcokf")
+theme_override_font_sizes/font_size = 120
+text = "End"
+
+[node name="Label" type="Label" parent="." unique_id=716881737]
+offset_left = 262.0
+offset_top = 5.0
+offset_right = 858.0
+offset_bottom = 181.0
+theme_override_fonts/font = ExtResource("4_xxly8")
+theme_override_font_sizes/font_size = 160
+text = "Bad End"
+
+[node name="Label2" type="Label" parent="." unique_id=2122848762]
+offset_left = 328.0
+offset_top = 162.0
+offset_right = 816.0
+offset_bottom = 224.0
+theme_override_fonts/font = ExtResource("4_xxly8")
+theme_override_font_sizes/font_size = 40
+text = "Lab Yasothon Sut Khun Yai"
+
+[node name="เพลง" type="AudioStreamPlayer" parent="." unique_id=908504030]
+stream = ExtResource("6_xxly8")
+autoplay = true
+script = SubResource("GDScript_wwvni")
+
+[node name="Area2D" parent="." unique_id=1155147205 instance=ExtResource("6_bcokf")]
+position = Vector2(4, 3)

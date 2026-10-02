@@ -1,0 +1,95 @@
+[gd_scene format=3 uid="uid://bcb71eynqyqd"]
+
+[ext_resource type="Script" uid="uid://bmpnn0xpmyuai" path="res://ฉาก/ห้อง(ฉากเกม)/ฉากจบ/ฉากจบ2.gd" id="1_46can"]
+[ext_resource type="FontFile" uid="uid://tthinwtxa75q" path="res://ภาพ/อักศร/Ashes, Ashes Medium_9606.ttf" id="2_ihxo7"]
+[ext_resource type="Texture2D" uid="uid://c5s0ov32f4nde" path="res://ฉาก/ห้อง(ฉากเกม)/เก็บภาพ/เอ็มออนิวรังสิต-สกิน-8.webp" id="2_kb0m7"]
+[ext_resource type="FontFile" uid="uid://dtfedtjbg5q8m" path="res://ภาพ/อักศร/ms-sans-serif-1.otf" id="3_kb0m7"]
+[ext_resource type="AudioStream" uid="uid://rjqrmqtmdctw" path="res://ภาพ/เสียง/sound_6a57222c35e12.mp3" id="4_46can"]
+[ext_resource type="PackedScene" uid="uid://druktgarfyqs8" path="res://ทดสอบ/เปลี่ยนฉาก/area_2d.tscn" id="5_c1rx5"]
+
+[sub_resource type="GDScript" id="GDScript_0pefy"]
+script/source = "extends Label
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+"
+
+[sub_resource type="GDScript" id="GDScript_1nwse"]
+script/source = "extends AudioStreamPlayer
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+"
+
+[node name="ฉากจบ2" type="Node2D" unique_id=901317002]
+script = ExtResource("1_46can")
+
+[node name="เอ็มออนิวรังสิตสกิน8" type="Sprite2D" parent="." unique_id=874675134]
+position = Vector2(576, 324)
+scale = Vector2(1.2562703, 0.76686394)
+texture = ExtResource("2_kb0m7")
+
+[node name="TextureButton" type="TextureButton" parent="." unique_id=1792581887]
+offset_left = 409.0
+offset_top = 484.0
+offset_right = 718.0
+offset_bottom = 584.0
+mouse_filter = 1
+
+[node name="Label" type="Label" parent="TextureButton" unique_id=2135831966]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_ihxo7")
+theme_override_font_sizes/font_size = 120
+text = "End"
+
+[node name="Label3" type="Label" parent="." unique_id=139008878]
+offset_left = 157.0
+offset_top = 1.0
+offset_right = 1000.0
+offset_bottom = 177.0
+theme_override_fonts/font = ExtResource("3_kb0m7")
+theme_override_font_sizes/font_size = 160
+text = "GOOD END"
+
+[node name="Label2" type="Label" parent="." unique_id=127394133]
+offset_left = 485.0
+offset_top = 163.0
+offset_right = 672.0
+offset_bottom = 225.0
+theme_override_fonts/font = ExtResource("3_kb0m7")
+theme_override_font_sizes/font_size = 40
+text = "Em-A-New"
+script = SubResource("GDScript_0pefy")
+
+[node name="เพลง" type="AudioStreamPlayer" parent="." unique_id=926130536]
+stream = ExtResource("4_46can")
+autoplay = true
+script = SubResource("GDScript_1nwse")
+
+[node name="Area2D" parent="." unique_id=1155147205 instance=ExtResource("5_c1rx5")]
+position = Vector2(4, 3)

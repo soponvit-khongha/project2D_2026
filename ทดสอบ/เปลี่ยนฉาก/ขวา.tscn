@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://b5pyv2hy2n0ut"]
+
+[ext_resource type="Script" uid="uid://cyipjbtnteaea" path="res://ทดสอบ/เปลี่ยนฉาก/ขวา.gd" id="1_h56dd"]
+[ext_resource type="Texture2D" uid="uid://rx2kpjhgvntm" path="res://ทดสอบ/เปลี่ยนฉาก/เมาส์/icons8-forward-button-48.png" id="2_c0414"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f3bvx"]
+size = Vector2(102, 531)
+
+[node name="ขวา" type="Area2D" unique_id=1739670107]
+script = ExtResource("1_h56dd")
+custom_cursor_texture = ExtResource("2_c0414")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=172927897]
+position = Vector2(1101, 318)
+shape = SubResource("RectangleShape2D_f3bvx")

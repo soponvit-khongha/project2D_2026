@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://bwapxskb4eer1"]
+
+[ext_resource type="Texture2D" uid="uid://ct2l70jf7bs1u" path="res://ฉาก/ห้อง(ฉากเกม)/เก็บภาพ/20260806_210713.png" id="1_y5ig0"]
+[ext_resource type="PackedScene" uid="uid://bgb2j6r5ed7yq" path="res://ตัวระคร/หน้าต่างข้อความตัวละคร/text_box.tscn" id="2_n16ss"]
+[ext_resource type="PackedScene" uid="uid://druktgarfyqs8" path="res://ทดสอบ/เปลี่ยนฉาก/area_2d.tscn" id="3_nt58u"]
+[ext_resource type="PackedScene" uid="uid://dyyknngasmhhu" path="res://ทดสอบ/เปลี่ยนฉาก/ลง.tscn" id="4_n16ss"]
+[ext_resource type="PackedScene" uid="uid://shbiapqnpevq" path="res://ทดสอบ/เปลี่ยนฉาก/กด.tscn" id="5_nt58u"]
+
+[node name="Room10" type="Node2D" unique_id=2050946091]
+
+[node name="ฉาก" type="TextureRect" parent="." unique_id=891521043]
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("1_y5ig0")
+expand_mode = 1
+stretch_mode = 6
+metadata/_edit_use_anchors_ = true
+
+[node name="TextBox" parent="." unique_id=1732555962 instance=ExtResource("2_n16ss")]
+
+[node name="Area2D" parent="." unique_id=1155147205 instance=ExtResource("3_nt58u")]
+position = Vector2(1, 1)
+
+[node name="ลง" parent="." unique_id=1434753056 instance=ExtResource("4_n16ss")]
+position = Vector2(2, 2)
+target_scene = "uid://dge8ak7bvkm5j"
+
+[node name="กด" parent="." unique_id=882885038 instance=ExtResource("5_nt58u")]
+position = Vector2(546, 320)
+scale = Vector2(1.1113453, 1.6953368)
+target_scene = "uid://bgg2qt80gt073"

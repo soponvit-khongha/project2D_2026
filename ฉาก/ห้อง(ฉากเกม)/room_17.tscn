@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://bwi3krrb83hng"]
+
+[ext_resource type="Texture2D" uid="uid://dyx3yehfejj8w" path="res://ฉาก/ห้อง(ฉากเกม)/เก็บภาพ/20260806_205031.png" id="1_bo0se"]
+[ext_resource type="Script" uid="uid://ctndi76s21r57" path="res://ฉาก/ห้อง(ฉากเกม)/room_17.gd" id="1_elfox"]
+[ext_resource type="PackedScene" uid="uid://bgb2j6r5ed7yq" path="res://ตัวระคร/หน้าต่างข้อความตัวละคร/text_box.tscn" id="2_bo0se"]
+[ext_resource type="PackedScene" uid="uid://druktgarfyqs8" path="res://ทดสอบ/เปลี่ยนฉาก/area_2d.tscn" id="3_1pjqs"]
+[ext_resource type="PackedScene" uid="uid://dqbrmus88dhrp" path="res://ของ/เสร็จแล้ว/เครื่องดื่ม.tscn" id="4_1pjqs"]
+[ext_resource type="PackedScene" uid="uid://dyyknngasmhhu" path="res://ทดสอบ/เปลี่ยนฉาก/ลง.tscn" id="5_1pjqs"]
+
+[node name="Room17" type="Node2D" unique_id=1056324429]
+script = ExtResource("1_elfox")
+
+[node name="ฉาก" type="TextureRect" parent="." unique_id=50660327]
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("1_bo0se")
+expand_mode = 1
+stretch_mode = 6
+metadata/_edit_use_anchors_ = true
+
+[node name="TextBox" parent="." unique_id=1732555962 instance=ExtResource("2_bo0se")]
+
+[node name="Area2D" parent="." unique_id=1155147205 instance=ExtResource("3_1pjqs")]
+position = Vector2(1, 1)
+
+[node name="เครื่องดื่ม" parent="." unique_id=25092998 instance=ExtResource("4_1pjqs")]
+position = Vector2(745.00006, 409.99997)
+rotation = -0.7855738
+scale = Vector2(0.6766299, 0.6328628)
+
+[node name="ลง" parent="." unique_id=1434753056 instance=ExtResource("5_1pjqs")]
+position = Vector2(1, 1)
+target_scene = "uid://ba56g3twgq23r"

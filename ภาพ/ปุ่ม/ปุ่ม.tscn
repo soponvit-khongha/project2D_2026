@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://bqavc5ctpjrvb"]
+
+[node name="ปุ่ม" type="Node" unique_id=1116982879]
+
+[node name="Button" type="Button" parent="." unique_id=311990056]
+visible = false
+offset_right = 305.0
+offset_bottom = 99.0

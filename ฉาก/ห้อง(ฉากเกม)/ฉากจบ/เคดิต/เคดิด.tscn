@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://dnxydl348hrt6"]
+
+[ext_resource type="Script" uid="uid://tbj320x7sdts" path="res://ฉาก/ห้อง(ฉากเกม)/ฉากจบ/เคดิต/เคดิด.gd" id="1_1e7eq"]
+[ext_resource type="Texture2D" uid="uid://b7h67clgd0pew" path="res://ฉาก/ห้อง(ฉากเกม)/เก็บภาพ/pngtree-elegant-gold-floral-decorative-frame-with-intricate-details-on-blank-background-image_17073907.jpg" id="2_rb7n0"]
+[ext_resource type="FontFile" uid="uid://dtfedtjbg5q8m" path="res://ภาพ/อักศร/ms-sans-serif-1.otf" id="3_rb7n0"]
+[ext_resource type="PackedScene" uid="uid://druktgarfyqs8" path="res://ทดสอบ/เปลี่ยนฉาก/area_2d.tscn" id="4_yn5da"]
+
+[node name="เคดิด" type="Node2D" unique_id=2037413616]
+script = ExtResource("1_1e7eq")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=482146571]
+
+[node name="PngtreeElegantGoldFloralDecorativeFrameWithIntricateDetailsOnBlankBackgroundImage17073907" type="Sprite2D" parent="CanvasLayer" unique_id=553167803]
+modulate = Color(0.64453125, 0.59669495, 0.59669495, 1)
+position = Vector2(576, 324)
+scale = Vector2(1.1999999, 1.2366412)
+texture = ExtResource("2_rb7n0")
+
+[node name="Label" type="Label" parent="CanvasLayer" unique_id=258120025]
+offset_left = 159.0
+offset_top = 178.0
+offset_right = 1010.0
+offset_bottom = 607.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_rb7n0")
+theme_override_font_sizes/font_size = 40
+text = "Nattaphoom Phadnok 683380416-4
+
+Sirawit Niyomwong 683380672-6
+
+Sophonwit Khongha 683380453-8
+
+Chunjak Srijantho 683380409-1"
+
+[node name="Area2D" parent="." unique_id=1155147205 instance=ExtResource("4_yn5da")]
+position = Vector2(1, 1)

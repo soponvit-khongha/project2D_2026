@@ -1,0 +1,80 @@
+[gd_scene format=3 uid="uid://bysj7p2bb4h3i"]
+
+[sub_resource type="GDScript" id="GDScript_2w6wh"]
+script/source = "extends Node2D
+
+# ระบุพาธไปยัง main.tscn ที่อยู่ในโฟลเดอร์ ฉาก
+@export var next_scene_path: String = \"res://ฉาก/main.tscn\"
+
+@onready var anim_player = $AnimationPlayer
+
+func _ready():
+	# เล่นแอนิเมชัน
+	anim_player.play(\"out\")
+	
+	# รอจนกว่าแอนิเมชันจะเล่นจบ
+	await anim_player.animation_finished
+	
+	# หน่วงเวลาเล็กน้อยก่อนเปลี่ยนฉาก (0.5 วินาที)
+	await get_tree().create_timer(0.5).timeout
+	
+	# เปลี่ยนไปยังฉาก main.tscn
+	get_tree().change_scene_to_file(next_scene_path)
+"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_vnjt4"]
+load_path = "res://.godot/imported/OIP__5_-removebg-preview.png-705da71250ce9cd85abd1ef4a2ed290a.ctex"
+
+[sub_resource type="Animation" id="Animation_nfget"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Oip5RemovebgPreview:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_331ia"]
+resource_name = "out"
+length = 0.001
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Oip5RemovebgPreview:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 1.9),
+"transitions": PackedFloat32Array(1, 0.5, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0.8), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_o2aie"]
+_data = {
+&"RESET": SubResource("Animation_nfget"),
+&"out": SubResource("Animation_331ia")
+}
+
+[node name="โหลด" type="Node2D" unique_id=481815379]
+script = SubResource("GDScript_2w6wh")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1273482927]
+offset_right = 1158.0
+offset_bottom = 658.0
+color = Color(0.93359375, 0.920032, 0.83148193, 1)
+
+[node name="Oip5RemovebgPreview" type="Sprite2D" parent="." unique_id=1725304269]
+position = Vector2(576, 324)
+scale = Vector2(2.206751, 2.4124088)
+texture = SubResource("CompressedTexture2D_vnjt4")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=264596919]
+libraries/ = SubResource("AnimationLibrary_o2aie")

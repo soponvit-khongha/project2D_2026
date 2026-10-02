@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://ce6g23kf3xm85"]
+
+[ext_resource type="Texture2D" uid="uid://c62xbmlysi7sy" path="res://ฉาก/ห้อง(ฉากเกม)/เก็บภาพ/20260806_211026.png" id="1_db6xo"]
+[ext_resource type="Script" uid="uid://dcf5h7xrh64xk" path="res://ฉาก/ห้อง(ฉากเกม)/room_1.gd" id="1_fs1ux"]
+[ext_resource type="PackedScene" uid="uid://bgb2j6r5ed7yq" path="res://ตัวระคร/หน้าต่างข้อความตัวละคร/text_box.tscn" id="2_adnil"]
+[ext_resource type="PackedScene" uid="uid://qsq8magv6w2c" path="res://ตัวระคร/ตัวระคร.tscn" id="4_8wrhw"]
+[ext_resource type="PackedScene" uid="uid://druktgarfyqs8" path="res://ทดสอบ/เปลี่ยนฉาก/area_2d.tscn" id="5_sve30"]
+[ext_resource type="PackedScene" uid="uid://dyyknngasmhhu" path="res://ทดสอบ/เปลี่ยนฉาก/ลง.tscn" id="6_gvb62"]
+[ext_resource type="PackedScene" uid="uid://bmvqjbtm0e3ct" path="res://ของ/เสร็จแล้ว/พวงมาลัย.tscn" id="7_e4brk"]
+
+[node name="Room1" type="Node2D" unique_id=7652181 node_paths=PackedStringArray("text_box")]
+script = ExtResource("1_fs1ux")
+text_box = NodePath("TextBox")
+
+[node name="ฉาก" type="TextureRect" parent="." unique_id=574301238]
+offset_right = 1152.0
+offset_bottom = 648.0
+mouse_filter = 2
+texture = ExtResource("1_db6xo")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="TextBox" parent="." unique_id=1732555962 node_paths=PackedStringArray("character_node") instance=ExtResource("2_adnil")]
+character_node = NodePath("../ตัวระคร")
+
+[node name="ตัวระคร" parent="." unique_id=828537330 instance=ExtResource("4_8wrhw")]
+position = Vector2(-25, 52)
+
+[node name="Area2D" parent="." unique_id=1155147205 instance=ExtResource("5_sve30")]
+
+[node name="ลง" parent="." unique_id=1434753056 instance=ExtResource("6_gvb62")]
+target_scene = "uid://dxf8wq2u2d0gg"
+
+[node name="พวงมาลัย" parent="." unique_id=1214457260 instance=ExtResource("7_e4brk")]
+position = Vector2(566, 448)
+rotation = 0.5483887
+scale = Vector2(0.547291, 0.56942016)

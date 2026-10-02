@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://druktgarfyqs8"]
+
+[ext_resource type="Script" uid="uid://pxqv56xghiik" path="res://ทดสอบ/เปลี่ยนฉาก/area_2d.gd" id="1_lrirj"]
+[ext_resource type="Texture2D" uid="uid://c7d3xjw3tr8sk" path="res://ทดสอบ/เปลี่ยนฉาก/เมาส์/icons8-filled-circle-30.png" id="2_lxfk8"]
+[ext_resource type="Texture2D" uid="uid://c6fxjui1rsv33" path="res://ทดสอบ/เปลี่ยนฉาก/เมาส์/icons8-circle-32.png" id="3_n2cdw"]
+[ext_resource type="AudioStream" uid="uid://b3dw2l65owlu1" path="res://ทดสอบ/เปลี่ยนฉาก/เมาส์/kauasilbershlachparodes-chutter-click-494024.mp3" id="4_n2cdw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f3bvx"]
+size = Vector2(1914, 1219)
+
+[node name="Area2D" type="Area2D" unique_id=1155147205]
+script = ExtResource("1_lrirj")
+hover_cursor = ExtResource("2_lxfk8")
+click_cursor = ExtResource("3_n2cdw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1250661404]
+position = Vector2(509, 328)
+shape = SubResource("RectangleShape2D_f3bvx")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=693120448]
+stream = ExtResource("4_n2cdw")
+autoplay = true

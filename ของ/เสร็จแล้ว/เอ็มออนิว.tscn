@@ -1,0 +1,113 @@
+[gd_scene format=3 uid="uid://bt316cf2o7ifq"]
+
+[ext_resource type="Texture2D" uid="uid://ctocrtvfv3yyw" path="res://ของ/ภาพของ/e6038ca9cee3f76c0071e6ceb9b4fc34-removebg-preview.png" id="1_5sn2l"]
+[ext_resource type="Script" uid="uid://r3nc3ft0bfqs" path="res://ของ/เสร็จแล้ว/เอ็มออนิว.gd" id="1_hdp5p"]
+[ext_resource type="Texture2D" uid="uid://cd56my7tl88yc" path="res://ของ/ภาพของ/468ec849dcc3816c9d25671d91694e60-removebg-preview.png" id="2_e7gy5"]
+[ext_resource type="Texture2D" uid="uid://c6fxjui1rsv33" path="res://ทดสอบ/เปลี่ยนฉาก/เมาส์/icons8-circle-32.png" id="2_j1iu0"]
+[ext_resource type="Texture2D" uid="uid://baofuskooypun" path="res://ของ/ภาพของ/ดาวน์โหลด-removebg-preview.png" id="3_nmjwd"]
+[ext_resource type="Texture2D" uid="uid://icup0eb58ump" path="res://ของ/ภาพของ/95bf4ba87529eb2afa91516c1b2c1249-removebg-preview.png" id="4_sudkm"]
+[ext_resource type="Texture2D" uid="uid://c4rm80ekbk17x" path="res://ของ/ภาพของ/1a3db4efba720de7219ba3e276c208e3-removebg-preview.png" id="5_rdjsy"]
+[ext_resource type="Texture2D" uid="uid://2ag2m86c6g44" path="res://ของ/ภาพของ/2e236eb8e554fdcf605fd61825abe675-removebg-preview.png" id="6_xxcvf"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_f3bvx"]
+radius = 361.3544
+
+[sub_resource type="Animation" id="Animation_kluan"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("2e236Eb8e554Fdcf605Fd61825Abe675RemovebgPreview:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(210, -141)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("2e236Eb8e554Fdcf605Fd61825Abe675RemovebgPreview:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_crvhy"]
+resource_name = "บินๆ"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("2e236Eb8e554Fdcf605Fd61825Abe675RemovebgPreview:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(210, -141), Vector2(173, -1), Vector2(120, -159)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("2e236Eb8e554Fdcf605Fd61825Abe675RemovebgPreview:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_wmfdu"]
+_data = {
+&"RESET": SubResource("Animation_kluan"),
+&"บินๆ": SubResource("Animation_crvhy")
+}
+
+[node name="เอ็มออนิว" type="Area2D" unique_id=293035725]
+script = ExtResource("1_hdp5p")
+custom_cursor_texture = ExtResource("2_j1iu0")
+
+[node name="E6038Ca9Cee3f76c0071e6Ceb9b4Fc34RemovebgPreview" type="Sprite2D" parent="." unique_id=1893780961]
+position = Vector2(-147, -58.000008)
+rotation = -0.16580626
+scale = Vector2(1.5020798, 1.2440046)
+texture = ExtResource("1_5sn2l")
+
+[node name="468Ec849Dcc3816c9d25671d91694e60RemovebgPreview" type="Sprite2D" parent="." unique_id=1563354278]
+position = Vector2(-77, 102)
+scale = Vector2(2.323077, 0.925)
+texture = ExtResource("2_e7gy5")
+
+[node name="ดาวน์โหลดRemovebgPreview" type="Sprite2D" parent="." unique_id=215623505]
+position = Vector2(-240, -10)
+texture = ExtResource("3_nmjwd")
+
+[node name="95Bf4Ba87529Eb2Afa91516c1b2c1249RemovebgPreview" type="Sprite2D" parent="." unique_id=912571353]
+position = Vector2(-87.999985, 17.99997)
+scale = Vector2(1.946, 1.78)
+texture = ExtResource("4_sudkm")
+
+[node name="1a3Db4Efba720De7219Ba3e276c208e3RemovebgPreview" type="Sprite2D" parent="." unique_id=1204077131]
+texture = ExtResource("5_rdjsy")
+
+[node name="2e236Eb8e554Fdcf605Fd61825Abe675RemovebgPreview" type="Sprite2D" parent="." unique_id=1480196155]
+position = Vector2(210, -141)
+texture = ExtResource("6_xxcvf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1026736092]
+position = Vector2(-93, 0)
+shape = SubResource("CircleShape2D_f3bvx")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=407952669]
+libraries/ = SubResource("AnimationLibrary_wmfdu")
+autoplay = &"บินๆ"

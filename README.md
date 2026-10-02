@@ -44,3 +44,15 @@ This starter kit provides all the essential mechanics needed to build a complete
 - **Hotspot / Interactable**: Configure `interaction_type` (Examine, Talk, Interact) and dialogue trigger files.
   
 ## Project Structure
+Scenes/
+├── Actors/            # Player character, NPCs, and interactive actors
+├── Levels/            # Room scenes, background environments, navigation maps, and UI
+├── Managers/          # GameManager, SceneTransition
+└── Prefabs/           # Reusable objects (hotspots, doors, puzzle props)
+
+Assets/
+├── Fonts/             # Custom fonts
+├── Icons/             # UI and dynamic cursor icons
+├── Sound/             # BGM and SFX
+├── Spritesheet/       # Character and room background sprites
+└── Textures/          # UI panels and interaction effect textures
